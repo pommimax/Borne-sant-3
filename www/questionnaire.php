@@ -18,7 +18,7 @@
 
 <!-- tête du questionnaire -->
 
-</head>
+</html>
 <body>
     <main>
         <header>
