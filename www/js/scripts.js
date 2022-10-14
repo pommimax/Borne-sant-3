@@ -1,3 +1,4 @@
+
 // On va chercher les différents éléments de notre page
 const pages = document.querySelectorAll(".page")
 const header = document.querySelector("header")
@@ -7,7 +8,7 @@ let pageActive = 1
 // On attend le chargement de la page
 window.onload = () => {
     // On affiche la 1ère page du formulaire
-    //document.querySelector(".page").style.display = "initial"
+    document.querySelector(".page").style.display = "initial"
 
     // On affiche les numéros des pages dans l'entête
     // On parcourt la liste des pages

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
+
 <!-- Page html dédiée au questionnaire 
     Pommier maxime  ---  2022-->
 
 <!-- salut c'est julia -->
 <!--coucou c max-->
-<!--salut c est marie-->
+<!--salut c est marie--> 
+<!--salut c est roxane-->
 
 <!-- Initialisation de la page html et lien avec le css-->
 
 <head>
+
     <html lang="fr">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +19,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
 
-<!-- tête du questionnaire -->
+<!-- tête du questionnaire test-->
 
 </head>
 <body>
@@ -33,7 +36,7 @@
             <div class="page" id="page1">
 
                 <!-- Q1 : Age de l'utilisateur, sous forme de tranche, adapter ensuite le questionnaire -->
-                <h1>Age</h1>
+                <h1>Age test</h1>
 
                 <div>
                     <label for="Age"> Quel âge avez vous ?</label>
@@ -154,9 +157,57 @@
                 <!-- Création boutons suivant et terminer -->
 
                 <button class="prev" type="button">Précédent</button>
-                <button>Terminer</button>
+                <button class="next" type="button">Suivant</button>
+
+
                 
             </div>
+
+            <!-- Création Page 6 -->
+
+            <div class="page" id="page6">
+
+                <!-- Q6 : Choix conso --> 
+
+                <h1> Autre consommation</h1>
+
+                <div>
+                    <fieldset name="conso" id="conso" required>
+                    <legend> que consommez vous? :</legend>
+
+                    <div>
+                        <input type="checkbox" id="Alcool" name="Alcool">
+                        <label for="Alcool"> Boissons alcoolisées</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Tabac" name="Tabac">
+                        <label for="Tabac">Tabac</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Cannabis" name="Cannabis">
+                        <label for="Cannabis">Cannabis</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Héroine,cocaine" name="Héroine,cocaine">
+                        <label for="Héroine,cocaine">Héroine,cocaine</label>
+                    </div>
+
+                    <div>   
+                        <input type="checkbox" id="Autres substances" name="Autres substances">
+                        <label for="Autres substances">Autres substances (gaz hilarant, LSD, extasie médicaments….) </label>
+                    </div>
+
+                    </fieldset>                
+                </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button>Terminer</button>
+
 
 
         </form>
