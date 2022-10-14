@@ -12,17 +12,17 @@ window.onload = () => {
 
     // On affiche les numéros des pages dans l'entête
     // On parcourt la liste des pages
-    pages.forEach((page, index) => {
+    //pages.forEach((page, index) => {
         // On crée l'élément "numéro de page"
-        let element = document.createElement("div")
-        element.classList.add("page-num")
-        element.id = "num" + (index + 1)
-        if(pageActive === index + 1){
-            element.classList.add("active")
-        }
-        element.innerHTML = index + 1
-        header.appendChild(element)
-    })
+        //let element = document.createElement("div")
+        //element.classList.add("page-num")
+        //element.id = "num" + (index + 1)
+        //if(pageActive === index + 1){
+        //    element.classList.add("active")
+        //}
+        //element.innerHTML = index + 1
+        //header.appendChild(element)
+    //})
 
     // On gère les boutons "suivant"
     let boutons = document.querySelectorAll(".next")
