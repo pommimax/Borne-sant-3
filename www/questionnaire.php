@@ -43,8 +43,8 @@
                     <select name="Age" id="Age" required>
                     <option value="" disabled selected hidden> Choisissez la réponse</option>
                     <option value="moins de 20 ans"> moins de 20 ans</option>
-                    <option value="De 21 à 44 ans"> De 21 à 44 ans</option>
-                    <option value="De 45 à 64"> De 45 à 64 ans</option>
+                    <option value="De 21 a 44 ans"> De 21 a 44 ans</option>
+                    <option value="De 45 a 64"> De 45 a 64 ans</option>
                     <option value="65 ans et plus"> 65 ans et plus</option>
                     </select>
                 </div>
@@ -133,6 +133,7 @@
                 
             </div>
 
+        
 
             <!-- Création Page 5-->
 
@@ -158,49 +159,156 @@
 
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
-
-
-                
+    
             </div>
+
+
+        <!-- Nouveau formulaire pour conso -->
 
             <!-- Création Page 6 -->
 
             <div class="page" id="page6">
 
-                <!-- Q6 : Choix conso --> 
+                <!-- Q6 : Choix conso alcool --> 
 
-                <h1> Autre consommation</h1>
+                <h1>Alcool</h1>
 
                 <div>
-                    <fieldset name="conso" id="conso" required>
-                    <legend> que consommez vous? :</legend>
+                    <label for="Alcool"> Consommez vous de l'alcool? :</label>
+                    <select name="Alcool" id="Alcool" required>
+                    <option value="" disabled selected hidden>Choisissez la réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    </select>                
+                </div>
 
-                    <div>
-                        <input type="checkbox" id="Alcool" name="Alcool">
-                        <label for="Alcool"> Boissons alcoolisées</label>
-                    </div>
+                <!-- Création boutons suivant et terminer -->
 
-                    <div>
-                        <input type="checkbox" id="Tabac" name="Tabac">
-                        <label for="Tabac">Tabac</label>
-                    </div>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
 
-                    <div>
-                        <input type="checkbox" id="Cannabis" name="Cannabis">
-                        <label for="Cannabis">Cannabis</label>
-                    </div>
+            </div>
 
-                    <div>
-                        <input type="checkbox" id="Héroine,cocaine" name="Héroine,cocaine">
-                        <label for="Héroine,cocaine">Héroine,cocaine</label>
-                    </div>
 
-                    <div>   
-                        <input type="checkbox" id="Autres substances" name="Autres substances">
-                        <label for="Autres substances">Autres substances (gaz hilarant, LSD, extasie médicaments….) </label>
-                    </div>
+             <!-- Création Page 7 -->
 
-                    </fieldset>                
+            <div class="page" id="page7">
+
+                <!-- Q7 : Choix conso Tabac --> 
+
+                <h1>Tabac</h1>
+
+                <div>
+                    <label for="Tabac"> Consommez vous du tabac? :</label>
+                    <select name="Tabac" id="Tabac" required>
+                    <option value="" disabled selected hidden>Choisissez la réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    </select>                
+                </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+
+
+
+
+            <!-- Création Page 8 -->
+
+            <div class="page" id="page8">
+
+                <!-- Q7: choix conso Cannabis -->
+
+                <h1>Cannabis</h1>
+
+                 <div>
+                    <label for="Cannabis"> Consommez vous du cannabis? :</label>
+                    <select name="Cannabis" id="Cannabis" required>
+                    <option value="" disabled selected hidden>Choisissez la réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    </select>                
+                </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+
+            </div>
+
+            <!-- Création Page 9 -->
+
+            <div class="page" id="page9">
+
+                <!-- Q9: choix conso Héroine, cocaine -->
+
+                <h1>Héroine, cocaine</h1>
+
+                 <div>
+                    <label for="Héroine cocaine"> Consommez vous de l'héroine ou de la cocaine? :</label>
+                    <select name="Héroine cocaine" id="Héroine cocaine" required>
+                    <option value="" disabled selected hidden>Choisissez la réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    </select>                
+                </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+
+            </div>
+
+
+            <!-- Création Page 10 -->
+
+            <div class="page" id="page10">
+
+                <!-- Q10: choix conso Autres substances -->
+
+                <h1>Autres substances</h1>
+
+                 <div>
+                    <label for="Autres substances"> Consommez vous d'autres substances telles que le gaz hilarant, du LSD, de l'extasie ou des médicaments? :</label>
+                    <select name="Autres substances" id="Autres substances" required>
+                    <option value="" disabled selected hidden>Choisissez la réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    </select>                
+                </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+
+            </div>
+
+            <!-- Création Page 11 -->
+
+            <div class="page" id="page11">
+
+                <!-- Q11: Autres pratiques -->
+
+                <h1> Autres pratiques </h1>
+
+                 <div>
+                    <label for="Autres pratiques"> Les pratiques suivantes : Jeux d'argent, jeux vidéo, sexe, sport, écrans, ont elles un impact sur votre vie personelle où professionelle (financier, isolement, perte de travail, perte de réseau social...) :</label>
+                    <select name="Autres pratiques" id="Autres pratiques" required>
+                    <option value="" disabled selected hidden>Choisissez la réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    </select>                
                 </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -209,10 +317,17 @@
                 <button>Terminer</button>
 
 
+            </div>
+
+
 
         </form>
+        
     </main>
-    
+
+
+
+
     <script src="js/scripts.js"></script>
 </body>
 </html>
