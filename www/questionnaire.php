@@ -21,7 +21,7 @@
 
 <!-- tête du questionnaire test-->
 
-</head>
+</html>
 <body>
     <main>
         <header>
@@ -252,8 +252,8 @@
                 <h1>Héroine, cocaine</h1>
 
                  <div>
-                    <label for="Héroine cocaine"> Consommez vous de l'héroine ou de la cocaine? :</label>
-                    <select name="Héroine cocaine" id="Héroine cocaine" required>
+                    <label for="HeroineCocaine"> Consommez vous de l'héroine ou de la cocaine? :</label>
+                    <select name="HeroineCocaine" id="HeroineCocaine" required>
                     <option value="" disabled selected hidden>Choisissez la réponse</option>
                     <option value="Oui">Oui</option>
                     <option value="Non">Non</option>
@@ -278,8 +278,8 @@
                 <h1>Autres substances</h1>
 
                  <div>
-                    <label for="Autres substances"> Consommez vous d'autres substances telles que le gaz hilarant, du LSD, de l'extasie ou des médicaments? :</label>
-                    <select name="Autres substances" id="Autres substances" required>
+                    <label for="AutresSubstances"> Consommez vous d'autres substances telles que le gaz hilarant, du LSD, de l'extasie ou des médicaments? :</label>
+                    <select name="AutresSubstances" id="AutresSubstances" required>
                     <option value="" disabled selected hidden>Choisissez la réponse</option>
                     <option value="Oui">Oui</option>
                     <option value="Non">Non</option>
@@ -303,8 +303,8 @@
                 <h1> Autres pratiques </h1>
 
                  <div>
-                    <label for="Autres pratiques"> Les pratiques suivantes : Jeux d'argent, jeux vidéo, sexe, sport, écrans, ont elles un impact sur votre vie personelle où professionelle (financier, isolement, perte de travail, perte de réseau social...) :</label>
-                    <select name="Autres pratiques" id="Autres pratiques" required>
+                    <label for="AutresPratiques"> Les pratiques suivantes : Jeux d'argent, jeux vidéo, sexe, sport, écrans, ont elles un impact sur votre vie personelle où professionelle (financier, isolement, perte de travail, perte de réseau social...) :</label>
+                    <select name="AutresPratiques" id="AutresPratiques" required>
                     <option value="" disabled selected hidden>Choisissez la réponse</option>
                     <option value="Oui">Oui</option>
                     <option value="Non">Non</option>
