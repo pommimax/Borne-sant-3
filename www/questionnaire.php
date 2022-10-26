@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 
 
 <!-- tête du questionnaire test-->
@@ -172,14 +173,26 @@
                 <!-- Q6 : Choix conso alcool --> 
 
                 <h1>Alcool</h1>
-
+                
+        
                 <div>
                     <label for="Alcool"> Consommez vous de l'alcool? :</label>
-                    <select name="Alcool" id="Alcool" required>
+                    <select onchange="change()" name="Alcool" id="Alcool" required>
                     <option value="" disabled selected hidden>Choisissez la réponse</option>
                     <option value="Oui">Oui</option>
                     <option value="Non">Non</option>
                     <option value="Occasionnellement">Occasionnellement</option>
+                    </select>                
+                </div>
+
+                 <div id="CAQ1">
+
+                    <label for="AQ1">A quelle fréquence consommez vous de l'Alcool ?  :</label>
+                    <select name="AQ1" id="AQ1" required>
+                    <option value="" disabled selected hidden> Choisissez la réponse</option>
+                    <option value="Oui">Jamais</option>
+                    <option value="Non">1 fois par mois</option>
+                    <option value="Occasionnellement">2 à 4 fois par mois</option>
                     </select>                
                 </div>
 
@@ -191,10 +204,13 @@
 
             </div>
 
+            
+
+           
 
              <!-- Création Page 7 -->
 
-            <div class="page" id="page7">
+            <div class="page" id="page8">
 
                 <!-- Q7 : Choix conso Tabac --> 
 
@@ -335,6 +351,6 @@
 
 
 
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
