@@ -21,7 +21,7 @@
 
 <!-- tête du questionnaire test-->
 
-</head>
+</html>
 <body>
     <main>
         <header>
