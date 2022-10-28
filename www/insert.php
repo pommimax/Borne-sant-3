@@ -6,8 +6,8 @@ $password = "";
 $dbname = "tutorial";
 
 
-$sql = "INSERT INTO `etudiants` (Age,Sante,ActivitePhysique,Corpulence,Sommeil,Alcool,Tabac,Cannabis,HeroineCocaine,AutresSubstances,AutresPratiques)
-VALUES( '$_POST[Age]','$_POST[Sante]','$_POST[ActivitePhysique]','$_POST[Corpulence]','$_POST[Sommeil]','$_POST[Alcool]','$_POST[Tabac]','$_POST[Cannabis]','$_POST[HeroineCocaine]','$_POST[AutresSubstances]','$_POST[AutresPratiques]')";
+$sql = "INSERT INTO `etudiants` (Age, Sexe,Sante,ActivitePhysique,Corpulence,Sommeil,Alcool,Tabac,Cannabis,HeroineCocaine,AutresSubstances,AutresPratiques)
+VALUES( '$_POST[Age]','$_POST[Sexe]','$_POST[Sante]','$_POST[ActivitePhysique]','$_POST[Corpulence]','$_POST[Sommeil]','$_POST[Alcool]','$_POST[Tabac]','$_POST[Cannabis]','$_POST[HeroineCocaine]','$_POST[AutresSubstances]','$_POST[AutresPratiques]')";
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   // définir le mode exception d'erreur PDO 
@@ -26,3 +26,4 @@ $conn = null;
 
 ?>
 
+  

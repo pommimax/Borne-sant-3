@@ -1,5 +1,9 @@
+// Fichier JS de notre questionnaire
+
 
 // On va chercher les différents éléments de notre page
+// Déclaration des constantes et variables
+
 const pages = document.querySelectorAll(".page")
 const header = document.querySelector("header")
 const nbPages = pages.length // Nombre de pages du formulaire
@@ -7,22 +11,9 @@ let pageActive = 1
 
 // On attend le chargement de la page
 window.onload = () => {
+
     // On affiche la 1ère page du formulaire
     document.querySelector(".page").style.display = "initial"
-
-    // On affiche les numéros des pages dans l'entête
-    // On parcourt la liste des pages
-    //pages.forEach((page, index) => {
-        // On crée l'élément "numéro de page"
-        //let element = document.createElement("div")
-        //element.classList.add("page-num")
-        //element.id = "num" + (index + 1)
-        //if(pageActive === index + 1){
-        //    element.classList.add("active")
-        //}
-        //element.innerHTML = index + 1
-        //header.appendChild(element)
-    //})
 
     // On gère les boutons "suivant"
     let boutons = document.querySelectorAll(".next")
@@ -51,14 +42,6 @@ function pageSuivante(){
     // On affiche la page suivante
     this.parentElement.nextElementSibling.style.display = "initial"
 
-    // On "désactive" la page active
-    document.querySelector(".active").classList.remove("active")
-
-    // On incrémente pageActive
-    pageActive++
-
-    // On "active" le nouveau numéro
-    document.querySelector("#num"+pageActive).classList.add("active")
 }
 
 /**
@@ -73,39 +56,38 @@ function pagePrecedente(){
     // On affiche la page suivante
     this.parentElement.previousElementSibling.style.display = "initial"
 
-    // On "désactive" la page active
-    document.querySelector(".active").classList.remove("active")
-
-    // On incrémente pageActive
-    pageActive--
-
-    // On "active" le nouveau numéro
-    document.querySelector("#num"+pageActive).classList.add("active")
 }
-
 
 /**
-*  Fonction Permettant l'affichage des questions suppplémentaires pour l'alcool
-*/
+ * Fonction pour afficher les bonnes questions par rapport à l'alcool
+ */
 
-function QuestionAlcool(){
+function change(){
+
+   document.getElementById("Alcool").addEventListener("change", function(event) {
+
+    var value = event.target.value; // Contient la nouvelle valeur de la liste déroulante sélectionnée par le client
+    if (value ==="Oui") {
+        document.getElementById("CAQ1").style.visibility = "visible"
+        document.getElementById("CAQ2").style.visibility = "visible"
+        document.getElementById("CAQ3").style.visibility = "visible"
+        document.getElementById("CAQ4").style.visibility = "visible"
+        document.getElementById("CAQ5").style.visibility = "visible"
+
+
+    }
+
+       
+    else if (value ==="Non") {
+        
+        document.getElementById("CAQ1").style.visibility = "hidden"
+        document.getElementById("CAQ2").style.visibility = "hidden"
+        document.getElementById("CAQ3").style.visibility = "hidden"
+        document.getElementById("CAQ4").style.visibility = "hidden"
+        document.getElementById("CAQ5").style.visibility = "hidden"
 
 }
 
- document.getElementById("Alcool").addEventListener("change", function(event) {
-                 var value = event.target.value; // Contient la nouvelle valeur de la liste déroulante sélectionnée par le client
-                if (value === "Oui") {
+});
 
-                    <div class="page" id="page7">
-                    <h1>Test </h1>
-
-
-
-                // Afficher la partie de "premierElement"
-                // Cacher la partie de "secondElement"
-                } else if (value === "secondElement") {
-               // Cacher la partie de "premierElement"
-           // Afficher la partie de "secondElement"
-              }
-            });
-            ?>
+}
