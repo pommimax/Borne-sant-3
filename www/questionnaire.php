@@ -46,7 +46,7 @@
 
             <!-- Création bouton suivant -->
 
-            <button class="next" type="button">Suivant</button>
+            <button class="next" type="button">Commencer</button>
             
             </div>
 
@@ -588,9 +588,180 @@
 
             </div>
 
-            <!-- Création Page 16 -->
+            <!-- Q1 supplémentaire sur le cannabis -->
 
             <div class="page" id="page16">
+
+                 <h1>Cannabis</h1>
+
+            <div>
+
+                <label for="CQ1">Avez-vous déjà fumé du cannabis avant midi ?</label>
+
+                <div>
+                    <input type="radio" name="CQ1" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="CQ1" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+            </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Q2 supplémentaire sur le cannabis -->
+
+            <div class="page" id="page17">
+
+                 <h1>Cannabis</h1>
+
+            <div>
+
+                <label for="CQ2">Avez-vous déjà fumé du cannabis lorque vous étiez seul(e) ?</label>
+
+                <div>
+                    <input type="radio" name="CQ2" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="CQ2" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+            </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Q3 supplémentaire sur le cannabis -->
+
+            <div class="page" id="page18">
+
+                 <h1>Cannabis</h1>
+
+            <div>
+
+                <label for="CQ3">Avez-vous déjà eu des problèmes de mémoire quand vous fumez du cannabis ?</label>
+
+                <div>
+                    <input type="radio" name="CQ3" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="CQ3" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+
+            </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+
+            <!-- Q4 supplémentaire sur le cannabis -->
+
+            <div class="page" id="page19">
+
+                 <h1>Cannabis</h1>
+
+            <div>
+
+                <label for="CQ4">Des amis ou des membres de votre famille vous ont-ils déjà dit que vous devriez réduire votre consommation de cannabis?</label>
+
+                <div>
+                    <input type="radio" name="CQ4" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="CQ4" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+            </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Q5 supplémentaire sur le cannabis -->
+
+            <div class="page" id="page20">
+
+                 <h1>Cannabis</h1>
+
+            <div>
+
+                <label for="CQ5">Avez-vous déjà essayé de réduire ou d'arrêter votre consommation de cannabis sans y parvenir ?</label>
+
+                <div>
+                    <input type="radio" name="CQ5" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="CQ5" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+            </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Q6 supplémentaire sur le cannabis -->
+
+            <div class="page" id="page21">
+
+                 <h1>Cannabis</h1>
+
+            <div>
+
+                <label for="CQ6">Avez-vous déjà eu des problèmes à cause de votre consommation de cannabis (dispute, bagarre, accident, mauvais résultat à l'école, etc.)?</label>
+
+                <div>
+                    <input type="radio" name="CQ6" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="CQ6" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+            </div>
+
+                <!-- Création boutons suivant et terminer -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+
+            <!-- Création Page 21 -->
+
+            <div class="page" id="page21">
 
                 <!-- Q11: choix conso Héroine, cocaine -->
 
@@ -622,9 +793,9 @@
             </div>
 
 
-            <!-- Création Page 17 -->
+            <!-- Création Page 22 -->
 
-            <div class="page" id="page17">
+            <div class="page" id="page22">
 
                 <!-- Q12: choix conso Autres substances -->
 
@@ -654,9 +825,9 @@
 
             </div>
 
-            <!-- Création Page 18 -->
+            <!-- Création Page 23 -->
 
-            <div class="page" id="page18">
+            <div class="page" id="page23">
 
                 <!-- Q13: Autres pratiques -->
 
