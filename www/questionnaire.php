@@ -28,13 +28,32 @@
         <header>
         </header>
 
+       
         <!-- début du questionnaire-->
 
         <form action="insert.php" method="post">
 
-            <!-- Création de la page 1-->
+            <!-- Page 1 : page d'acceuil du patient pour attirer sur questionnaire -->      
 
             <div class="page" id="page1">
+
+                <h1> Vous avez 2 minutes ?                
+                </h1>
+
+                <h2>
+             Evaluez votre état de santé à travers ce questionnaire totalement anonyme, gratuit et sans aucun engagement de votre part   
+                </h2>
+
+            <!-- Création bouton suivant -->
+
+            <button class="next" type="button">Suivant</button>
+            
+            </div>
+
+
+            <!-- Création de la page 2-->
+
+            <div class="page" id="page2">
 
                 <!-- Q1 : Age de l'utilisateur, sous forme de tranche, adapter ensuite le questionnaire -->
 
@@ -45,13 +64,13 @@
                 <label for="Age"> Quel âge avez vous ?</label>
 
                     <div>
-                        <input type="radio" name="Age" id="moins de 20 ans" value = "moins de 20 ans">
-                        <label for="moins de 20 ans"> moins de 20 ans </label>
+                        <input type="radio" name="Age" id="De 0 à 20 ans" value = "De 0 à 20 ans">
+                        <label for="De 0 à 20 ans"> De 0 à 20 ans </label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Age" id="De 20 a 44 ans" value = "De 20 a 44 ans">
-                        <label for="De 20 a 44 ans"> De 20 a 44 ans </label>
+                        <input type="radio" name="Age" id="De 21 a 44 ans" value = "De 21 a 44 ans">
+                        <label for="De 21 a 44 ans"> De 21 a 44 ans </label>
                     </div>
 
                     <div>
@@ -76,24 +95,24 @@
             </div>
 
 
-            <!-- Création de la page 2-->
+            <!-- Création de la page 3-->
 
-            <div class="page" id="page2">
+            <div class="page" id="page3">
 
                 <!-- Q2 : Sexe de l'utilisateur -->
                 <h1>Sexe</h1>
 
                 <div>
 
-                <label for="Sexe">Votre sexe</label>
+                <label for="Sexe">Sexe:</label>
                     <div>
-                        <input type="radio" name="Sexe" id="masculin" value = "masculin">
-                        <label for="masculin"> Masculin </label>
+                        <input type="radio" name="Sexe" id="Homme" value = "Homme">
+                        <label for="Homme"> Homme </label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Sexe" id="feminin" value = "feminin">
-                        <label for="feminin"> Feminin </label>
+                        <input type="radio" name="Sexe" id="Femme" value = "Femme">
+                        <label for="Femme"> Femme </label>
                     </div>
 
                     <div>
@@ -110,9 +129,9 @@
 
             </div>
 
-            <!-- Création de la page 3-->
+            <!-- Création de la page 4-->
 
-            <div class="page" id="page3">
+            <div class="page" id="page4">
 
                 <!-- Q3 : Qualification de sa santé -->
 
@@ -149,11 +168,48 @@
 
             </div>
 
-            <!-- Création Page 4-->
 
-            <div class="page" id="page4">
+            <!-- Création de la page 5-->
 
-                <!-- Q4 : Activité physique -->
+            <div class="page" id="page5">
+
+                <!-- Q4 : Impact alimentation -->
+
+                <h1>Impact alimentation</h1>
+
+                <div>
+
+                <label for="Alimentation"> Pensez-vous que votre alimentation a un impact sur votre santé ?</label>
+
+                    <div>
+                        <input type="radio" name="Alimentation" id="Un peu" value = "Un peu">
+                        <label for="Un peu"> Un peu </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Alimentation" id="Beaucoup" value = "Beaucoup">
+                        <label for="Beaucoup"> Beaucoup </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Alimentation" id="Pas du tout" value = "Pas du tout">
+                        <label for="Bonne">Bonne</label>
+                    </div>
+
+                </div>
+
+                <!-- Création boutons suivant et précédent -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Création Page 6-->
+
+            <div class="page" id="page6">
+
+                <!-- Q5 : Activité physique -->
 
                 <h1>Activité physique</h1>
                 <div>
@@ -184,11 +240,11 @@
 
             </div>
 
-            <!-- Création Page 5-->
+            <!-- Création Page 7-->
 
-            <div class="page" id="page5">
+            <div class="page" id="page7">
 
-                <!-- Q5 : Corpulence -->
+                <!-- Q6 : Corpulence -->
 
                 <h1>Corpulence</h1>
 
@@ -211,13 +267,13 @@
                     </div>
 
                     <div>
-                        <input type="radio" name="Corpulence" id="Un peu trop gros(se)" value = "Un peu trop gros(se)">
-                        <label for="Un peu trop gros(se)">Un peu trop gros(se)</label>
+                        <input type="radio" name="Corpulence" id="Un peu en surpoids" value = "Un peu en surpoids">
+                        <label for="Un peu en surpoids">Un peu en surpoids</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Corpulence" id="Beaucoup trop gros(se)" value = "Beaucoup trop gros(se)">
-                        <label for="Beaucoup trop gros(se)">Beaucoup trop gros(se)</label>
+                        <input type="radio" name="Corpulence" id="Avec un surpoids important" value = "Avec un surpoids important">
+                        <label for="Avec un surpoids important">Avec un surpoids important</label>
                     </div>
 
                 </div>
@@ -232,11 +288,11 @@
 
         
 
-            <!-- Création Page 6-->
+            <!-- Création Page 8-->
 
-            <div class="page" id="page6">
+            <div class="page" id="page8">
 
-                <!-- Q6 : Sommeil -->
+                <!-- Q7 : Sommeil -->
 
                  <h1>Sommeil</h1>
 
@@ -275,17 +331,18 @@
 
         <!-- Nouveau formulaire pour conso -->
 
-            <!-- Création Page 7 -->
+            <!-- Création Page 9 -->
 
-            <div class="page" id="page7">
+            <div class="page" id="page9">
 
-                <!-- Q7 : Choix conso alcool -->
+                <!-- Q8 : Choix conso alcool -->
 
                 <h1>Alcool</h1>
 
             <div>
-                <label for="Alcool"> Consommez vous de l'alcool? :</label>
-                <radio onchange="change()" name="Alcool" id="Alcool" required>
+                <label for="Alcool"> Consommez vous des boissons alcoolisées ? :</label>
+
+                 <radio onchange="togg()" name="Alcool" id="Alcool" required>
                 <div>
                     <input type="radio" name="Alcool" id="Oui" value = "Oui">
                     <label for="Oui">Oui</label>
@@ -298,79 +355,165 @@
                     <input type="radio" name="Alcool" id="Occasionnellement" value = "Occasionnellement">
                     <label for="Occasionnellement">Occasionnellement</label>
                 </div>
+
+            </div>
+
+                <!-- Création boutons suivant et précédent -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
             </div>
 
                 <!-- Q1 supplémentaire sur l'alcool -->
 
-                <div id="CAQ1" class="CAQ">
-                    
-                    <label for="AQ1">A quelle fréquence consommez vous de l'Alcool ?  :</label>
-                    <select name="AQ1" id="AQ1">
-                    <option value="" disabled selected hidden> Choisissez la réponse</option>
-                    <option value="Jamais">Jamais</option>
-                    <option value="1 fois par mois">1 fois par mois</option>
-                    <option value="2 à 4 fois par mois">2 à 4 fois par mois</option>
-                    </select>                
+            <div class="page" id="page9">
+
+                <h1>Alcool</h1>
+
+            <div>
+                <label for="AQ1"> A quelle fréquence consommez vous de l'alcool? :</label>
+
+                <div>
+                    <input type="radio" name="AQ1" id="Jamais" value = "Jamais">
+                    <label for="Jamais">Jamais</label>
                 </div>
+                <div>
+                    <input type="radio" name="AQ1" id="1 fois par mois" value = "1 fois par mois">
+                    <label for="1 fois par mois">1 fois par mois</label>
+                </div>
+                <div>
+                    <input type="radio" name="AQ1" id="2 à 4 fois par mois" value = "2 à 4 fois par mois">
+                    <label for="2 à 4 fois par mois">2 à 4 fois par mois</label>
+                </div>
+                </div>
+                <!-- Création boutons précédent et suivant -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+            
+            </div>
+
 
                 <!-- Q2 supplémentaire sur l'alcool -->
 
-                 <div id="CAQ2" class="CAQ">
-                    
-                    <label for="AQ2">Combien de verres standard buvez-vous les jours où vous buvez de l'alcool ?  :</label>
-                    <select name="AQ2" id="AQ2">
-                    <option value="" disabled selected hidden> Choisissez la réponse</option>
-                    <option value="1 ou 2"> 1 ou 2</option>
-                    <option value="3 ou 4"> 3 ou 4</option>
-                    <option value="5 ou 6"> 5 ou 6</option>
-                    <option value="7 à 9"> 7 à 9</option>
-                    <option value="10 et plus"> 10 et plus</option>
-                    </select>                
+            <div class="page" id="page10">
 
+                   <h1>Alcool</h1>
+
+            <div>
+                <label for="AQ1"> Combien de verres standart buvez-vous les jours où vous buvez de l'alcool ? :</label>
+
+                <div>
+                    <input type="radio" name="AQ2" id="1 ou 2" value = "1 ou 2">
+                    <label for="1 ou 2">1 ou 2</label>
+                </div>
+                <div>
+                    <input type="radio" name="AQ2" id="3 ou 4" value = "3 ou 4">
+                    <label for="3 ou 4">3 ou 4</label>
+                </div>
+                <div>
+                    <input type="radio" name="AQ2" id="5 ou 6" value = "5 ou 6">
+                    <label for="5 ou 6">5 ou 6</label>
                 </div>
 
-                <!-- Q3 supplémentaire sur l'alcool -->
-
-                 <div id="CAQ3" class="CAQ">
-                    
-                    <label for="AQ3">Est ce que votre entourage vous a fait des remarques concernant votre consomation d'alcool ?  :</label>
-                    <select name="AQ3" id="AQ3">
-                    <option value="" disabled selected hidden> Choisissez la réponse</option>
-                    <option value="Oui"> Oui</option>
-                    <option value="Non"> Non</option>
-                    </select>             
-
+                <div>
+                    <input type="radio" name="AQ2" id="7 à 9" value = "7 à 9">
+                    <label for="7 à 9">7 à 9</label>
                 </div>
 
-
-                <!-- Q4 supplémentaire sur l'alcool -->
-
-                 <div id="CAQ4" class="CAQ">
-                    
-                    <label for="AQ4">Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme?  :</label>
-                    <select name="AQ4" id="AQ4">
-                    <option value="" disabled selected hidden> Choisissez la réponse</option>
-                    <option value="Oui"> Oui</option>
-                    <option value="Non"> Non</option>
-                    </select>             
-
+                <div>
+                    <input type="radio" name="AQ2" id="10 et plus" value = "10 et plus">
+                    <label for="10 et plus">10 et plus</label>
                 </div>
 
+                </div>
+                <!-- Création boutons précédent et suivant -->
 
-                <!-- Q5 supplémentaire sur l'alcool -->
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+            
+            </div>
 
-                 <div id="CAQ5" class="CAQ">
-                    
-                    <label for="AQ5">Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?  :</label>
-                    <select name="AQ5" id="AQ5">
-                    <option value="" disabled selected hidden> Choisissez la réponse</option>
-                    <option value="Oui"> Oui</option>
-                    <option value="Non"> Non</option>
-                    </select>             
+            <!-- Q3 supplémentaire sur l'alcool -->
+
+            <div class="page" id="page11">
+
+                <h1>Alcool</h1>
+
+            <div>
+                <label for="AQ3"> Est ce que votre entourage vous a fait des remarques concernant votre consomation d'alcool ?  :</label>
+
+                <div>
+                    <input type="radio" name="AQ3" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="AQ3" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+                </div>
+    
 
                 </div>
+                <!-- Création boutons précédent et suivant -->
 
-                <!-- Création boutons suivant et terminer -->
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+            
+            </div>    
+
+            <!-- Q4 supplémentaire sur l'alcool -->
+
+            <div class="page" id="page12">
+
+                <h1>Alcool</h1>
+
+            <div>
+                <label for="AQ4">Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme?  :</label>
+
+                <div>
+                    <input type="radio" name="AQ4" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="AQ4" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+                </div>
+            </div>
+    
+
+                <!-- Création boutons précédent et suivant -->
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Q5 supplémentaire sur l'alcool -->
+
+            <div class="page" id="page13">
+
+                 <h1>Alcool</h1>
+
+            <div>
+
+                <label for="AQ4">Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?  :</label>
+
+                <div>
+                    <input type="radio" name="AQ5" id="Oui" value = "Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div>
+                    <input type="radio" name="AQ5" id="Non" value = "Non">
+                    <label for="Non">Non</label>
+
+                </div>
+            </div>
+        
+
+            
+
+                <!-- Création boutons précédent et suivant -->
 
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
@@ -379,11 +522,11 @@
             </div>
 
         
-             <!-- Création Page 8 -->
+            <!-- Création Page 14 -->
 
-            <div class="page" id="page8">
+            <div class="page" id="page14">
 
-                <!-- Q8 : Choix conso Tabac --> 
+            <!-- Q9 : Choix conso Tabac --> 
 
 
             <h1>Tabac</h1>
@@ -413,11 +556,11 @@
             </div>
 
 
-            <!-- Création Page 9 -->
+            <!-- Création Page 15 -->
 
-            <div class="page" id="page9">
+            <div class="page" id="page15">
 
-                <!-- Q9: choix conso Cannabis -->
+            <!-- Q10: choix conso Cannabis -->
 
                 <h1>Cannabis</h1>
 
@@ -445,11 +588,11 @@
 
             </div>
 
-            <!-- Création Page 10 -->
+            <!-- Création Page 16 -->
 
-            <div class="page" id="page10">
+            <div class="page" id="page16">
 
-                <!-- Q10: choix conso Héroine, cocaine -->
+                <!-- Q11: choix conso Héroine, cocaine -->
 
                 <h1>Héroine, cocaine</h1>
 
@@ -479,11 +622,11 @@
             </div>
 
 
-            <!-- Création Page 11 -->
+            <!-- Création Page 17 -->
 
-            <div class="page" id="page11">
+            <div class="page" id="page17">
 
-                <!-- Q11: choix conso Autres substances -->
+                <!-- Q12: choix conso Autres substances -->
 
                 <h1>Autres substances</h1>
 
@@ -511,11 +654,11 @@
 
             </div>
 
-            <!-- Création Page 12 -->
+            <!-- Création Page 18 -->
 
-            <div class="page" id="page11">
+            <div class="page" id="page18">
 
-                <!-- Q11: Autres pratiques -->
+                <!-- Q13: Autres pratiques -->
 
                 <h1> AutresPratiques </h1>
 

@@ -60,7 +60,7 @@ function pagePrecedente(){
 
 /**
  * Fonction pour afficher les bonnes questions par rapport à l'alcool
- */
+ 
 
 function change(){
 
@@ -68,11 +68,11 @@ function change(){
 
     var value = event.target.value; // Contient la nouvelle valeur de la liste déroulante sélectionnée par le client
     if (value ==="Oui") {
-        document.getElementById("CAQ1").style.visibility = "visible"
-        document.getElementById("CAQ2").style.visibility = "visible"
-        document.getElementById("CAQ3").style.visibility = "visible"
-        document.getElementById("CAQ4").style.visibility = "visible"
-        document.getElementById("CAQ5").style.visibility = "visible"
+        document.getElementById("page9").style.visibility = "visible"
+        document.getElementById("page10").style.visibility = "visible"
+        document.getElementById("page11").style.visibility = "visible"
+        document.getElementById("page12").style.visibility = "visible"
+        document.getElementById("page13").style.visibility = "visible"
 
 
     }
@@ -80,14 +80,36 @@ function change(){
        
     else if (value ==="Non") {
         
-        document.getElementById("CAQ1").style.visibility = "hidden"
-        document.getElementById("CAQ2").style.visibility = "hidden"
-        document.getElementById("CAQ3").style.visibility = "hidden"
-        document.getElementById("CAQ4").style.visibility = "hidden"
-        document.getElementById("CAQ5").style.visibility = "hidden"
+        document.getElementById("page9").style.visibility = "hidden"
+        document.getElementById("page10").style.visibility = "hidden"
+        document.getElementById("page11").style.visibility = "hidden"
+        document.getElementById("page12").style.visibility = "hidden"
+        document.getElementById("page13").style.visibility = "hidden"
 
 }
 
 });
 
 }
+*/
+
+let BtnOui = document.getElementById("BtnOui");
+let BtnNon = document.getElementById("BtnNon");
+let page8 = document.getElementById("page8");
+let page9 = document.getElementById("page9");
+
+BtnOui.addEventListener("click", () => {
+  if(getComputedStyle(page8).display != "none"){
+    page8.style.display = "none";
+  } else {
+    page8.style.display = "block";
+  }
+})
+
+function togg(){
+  if(getComputedStyle(page8).display != "none"){
+    page8.style.display = "none";
+  } else {
+    page8.style.display = "block";
+  }
+};
