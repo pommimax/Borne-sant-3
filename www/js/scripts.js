@@ -1,4 +1,4 @@
-// Fichier JS de notre questionnaire
+// Fichier JS de notre questionnaire  o
 
 
 // On va chercher les différents éléments de notre page
