@@ -3,9 +3,9 @@
 <!-- Page html dédiée au questionnaire 
     Pommier maxime  ---  2022-->
 
-<!-- salut c'est julia la grosse méchante -->
+<!-- salut c julia la grosse méchante -->
 <!--coucou c max-->
-<!--salut c est marie--> 
+<!--salut c marie-->
 <!--salut c est roxane-->
 
 <!-- Initialisation de la page html et lien avec le css-->
@@ -130,37 +130,43 @@
             </div>
 
             <!-- Création de la page 4-->
-
             <div class="page" id="page4">
 
                 <!-- Q3 : Qualification de sa santé -->
-
                 <h1>Qualification santé</h1>
-                <div>
-                <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
+                <div><label for="Sante"> Comment qualifieriez-vous votre santé ?</label></div>
 
-                    <div>
-                        <input type="radio" name="Sante" id="Excellente" value = "Excellente">
-                        <label for="Excellente">Excellente</label>
-                    </div>
+                <div id="conteneur">
+                        <div id="A droite">
+                            <div id="avatar" style="position:relative; height:150px; top:150px; width:100px; visibility:hidden; float:right; padding-right: 400px"><img src="./Image/avatarSourire.jpg" width="200px" height="auto"></div>
+                            <div id="avatar2" style="position: relative;height:100px;top:150px; width:100px; visibility:hidden; float:right; margin-right: -170px"><img src="./Image/avatarTriste.jpg" width="150px" height="auto"></div>
+                            <div id="bulle" style="position: relative;height:150px;width:27%;visibility:hidden;float:right;clear:right; top:-200px"><img src="./Image/bulle.png" width="200px" height="auto">
+                                <span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:120px"><a href="https://www.mangerbouger.fr/">Visiter le site <br> "mangez bougez"</a></span></div>
+                        </div>
 
-                    <div>
-                        <input type="radio" name="Sante" id="Tres bonne" value = "Tres bonne">
-                        <label for="Tres bonne"> Tres bonne </label>
-                    </div>
+                <table style="line-height: 150%;margin-left:35%;margin-right:40%" cellspacing="30">
 
-                    <div>
-                        <input type="radio" name="Sante" id="Bonne" value = "Bonne">
-                        <label for="Bonne">Bonne</label>
-                    </div>
+                    <tr>
+                        <td><input type="radio" name="Sante" id="Excellente" value = "Excellente" onclick="Animer('avatar','bulle')"></td>
+                        <td><label for="Excellente">Excellente</label></td>
+                    </tr>
 
-                    <div>
-                        <input type="radio" name="Sante" id="Mauvaise" value = "Mauvaise">
-                        <label for="Mauvaise">Mauvaise</label>
-                    </div>
+                    <tr>
+                        <td><input type="radio" name="Sante" id="Tres bonne" value = "Tres bonne"></td>
+                        <td><label for="Tres bonne"> Tres bonne </label></td>
+                    </tr>
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="Sante" id="Bonne" value = "Bonne"></td>
+                        <td><label for="Bonne">Bonne</label></td>
+                    </tr>
 
+                    <tr>
+                        <td><input type="radio" name="Sante" id="Mauvaise" value = "Mauvaise" onclick="Animer('avatar2','bulle')"></td>
+                        <td><label for="Mauvaise">Mauvaise</label></td>
+                    </tr>
+
+                </table></div>
                 <!-- Création boutons suivant et précédent -->
 
                 <button class="prev" type="button">Précédent</button>
@@ -862,10 +868,6 @@
         </form>
         
     </main>
-
-
-
-
 <script src="js/scripts.js"></script>
 </body>
 </html>

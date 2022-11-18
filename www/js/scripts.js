@@ -12,7 +12,7 @@ let pageActive = 1
 // On attend le chargement de la page
 window.onload = () => {
 
-    // On affiche la 1ère page du formulaire
+    // On affiche la 1ere page du formulaire
     document.querySelector(".page").style.display = "initial"
 
     // On gère les boutons "suivant"
@@ -60,19 +60,19 @@ function pagePrecedente(){
 
 /**
  * Fonction pour afficher les bonnes questions par rapport à l'alcool
- 
-
+ */
+/**
 function change(){
 
    document.getElementById("Alcool").addEventListener("change", function(event) {
 
     var value = event.target.value; // Contient la nouvelle valeur de la liste déroulante sélectionnée par le client
     if (value ==="Oui") {
-        document.getElementById("page9").style.visibility = "visible"
-        document.getElementById("page10").style.visibility = "visible"
-        document.getElementById("page11").style.visibility = "visible"
-        document.getElementById("page12").style.visibility = "visible"
-        document.getElementById("page13").style.visibility = "visible"
+        document.getElementById("CAQ1").style.visibility = "visible"
+        document.getElementById("CAQ2").style.visibility = "visible"
+        document.getElementById("CAQ3").style.visibility = "visible"
+        document.getElementById("CAQ4").style.visibility = "visible"
+        document.getElementById("CAQ5").style.visibility = "visible"
 
 
     }
@@ -80,11 +80,11 @@ function change(){
        
     else if (value ==="Non") {
         
-        document.getElementById("page9").style.visibility = "hidden"
-        document.getElementById("page10").style.visibility = "hidden"
-        document.getElementById("page11").style.visibility = "hidden"
-        document.getElementById("page12").style.visibility = "hidden"
-        document.getElementById("page13").style.visibility = "hidden"
+        document.getElementById("CAQ1").style.visibility = "hidden"
+        document.getElementById("CAQ2").style.visibility = "hidden"
+        document.getElementById("CAQ3").style.visibility = "hidden"
+        document.getElementById("CAQ4").style.visibility = "hidden"
+        document.getElementById("CAQ5").style.visibility = "hidden"
 
 }
 
@@ -92,24 +92,32 @@ function change(){
 
 }
 */
+function Animer(idimg, idbtn)
+{
+    var element = document.getElementById(idbtn);
+    var element2 = document.getElementById(idimg);
+    var position = 1000;
+    document.getElementById('avatar').style.visibility='hidden';
+    document.getElementById('avatar2').style.visibility='hidden';
 
-let BtnOui = document.getElementById("BtnOui");
-let BtnNon = document.getElementById("BtnNon");
-let page8 = document.getElementById("page8");
-let page9 = document.getElementById("page9");
+    document.getElementById('bulle').style.visibility='hidden';
 
-BtnOui.addEventListener("click", () => {
-  if(getComputedStyle(page8).display != "none"){
-    page8.style.display = "none";
-  } else {
-    page8.style.display = "block";
-  }
-})
 
-function togg(){
-  if(getComputedStyle(page8).display != "none"){
-    page8.style.display = "none";
-  } else {
-    page8.style.display = "block";
-  }
-};
+    //.style.visibility='hidden'
+    element.style.visibility='visible';
+    element2.style.visibility='visible';
+    var id=setInterval(mvt,5);
+    function mvt()
+    {
+        if(position < 50)
+        {
+            clearInterval(id)
+        }
+        else
+        {
+            position = position - 15;
+            element.style.left = position + "px";
+            element2.style.left = position + "px";
+        }
+    }
+}
