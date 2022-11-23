@@ -126,44 +126,19 @@ Page contenant le code PHP de notre projet
 
             </div>
 
-            <!-- Création de la page 4-->
-            <div class="page" id="page4">
+            <!-- Création de la page 3-->
+
+            <div class="page" id="page3">
 
                 <!-- Q3 : Qualification de sa santé -->
+
                 <h1>Qualification santé</h1>
-                <div><label for="Sante"> Comment qualifieriez-vous votre santé ?</label></div>
-                <div id="conteneur">
-                    <div id="droite1">
-                    </div>
-
-                    <table style="line-height: 100%;margin-left:35%;margin-right:40%" cellspacing="30">
-
-                        <tr>
-                            <td><input type="radio" name="Sante" id="Excellente" value = "Excellente" onclick="Animer('avatar','bulle')"></td>
-                            <td><label for="Excellente">Excellente</label></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="radio" name="Sante" id="Tres bonne" value = "Tres bonne" onclick="Animer('avatar','bulle')"></td>
-                            <td><label for="Tres bonne"> Tres bonne </label></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="radio" name="Sante" id="Bonne" value = "Bonne" onclick="Animer('avatar','bulle')"></td>
-                            <td><label for="Bonne">Bonne</label></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="radio" name="Sante" id="Moyenne" value = "Moyenne" onclick="Animer('avatar2','bulle')"></td>
-                            <td><label for="Moyenne">Moyenne</label></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="radio" name="Sante" id="Mauvaise" value = "Mauvaise" onclick="Animer('avatar2','bulle')"></td>
-                            <td><label for="Mauvaise">Mauvaise</label></td>
-                        </tr>
-
-                    </table></div>
+                <div class = "slidecontainer">
+                <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
+                <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSlider()">
+                <p> Value : <span id="demo"></span></p>
+                </div>
+                    
                 <!-- Création boutons suivant et précédent -->
 
                 <button class="prev" type="button">Précédent</button>
