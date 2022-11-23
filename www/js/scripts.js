@@ -306,3 +306,28 @@ function Animer(idimg, idbtn)
         }
     }
 }
+
+var santeChoix = "Defaut"
+function ChoixSlider(){
+
+    var value = event.currentTarget.value;
+    console.log(value)
+        if (value <= 20){
+            santeChoix ="Mauvaise"
+        }
+        else if (21 <= value && value<= 40){
+            santeChoix ="Moyenne"
+        }
+        else if(41<=value && value <=60){
+            santeChoix = "Bonne"
+        }
+        else if(61<= value && value <=80){
+            santeChoix = "Très bonne"
+        }
+        else if(81<=value){
+            santeChoix="Excellente"
+        }
+
+    document.getElementById("demo").innerHTML = value
+    document.cookie = "sante="+santeChoix+";"+ new Date().toUTCString() + ";path=/"
+}
