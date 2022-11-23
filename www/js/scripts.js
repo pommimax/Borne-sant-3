@@ -10,6 +10,7 @@ Page contenant le code Javascript de notre projet
 const pages = document.querySelectorAll(".page")
 const header = document.querySelector("header")
 const nbPages = pages.length // Nombre de pages du formulaire
+var age;
 let pageActive = 1
 
 // On attend le chargement de la page
@@ -262,10 +263,22 @@ function afficheBtnC(){
 
 /**
  * Fonction qui gère l'animation des avatars 
- */ 
+ */
+
+function getAge()
+{
+    age = document.querySelector('input[name="Age"]:checked').value;
+}
+
 
 function Animer(idimg, idbtn)
 {
+    var div = document.getElementById('droite1');
+    div.innerHTML = '<div id="avatar" style="position:relative; height:150px; top:150px; width:100px; visibility:hidden; float:right; margin-right: 300px"><img src="./Image/'+ age +'J.jpg" width="150px" height="auto"></div>' +
+        '<div id="avatar2" style="position: relative;height:100px;top:200px; width:100px; visibility:hidden; float:right; margin-right: -100px"><img src="./Image/'+age+'T.jpg" width="150px" height="auto"></div>' +
+        '<div id="bulle" style="position: relative;height:150px;width:27%;visibility:hidden;float:right;clear:right; top:-150px"><img src="./Image/bulle.png" width="200px" height="auto">' +
+        '<span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:120px"><a href="https://www.mangerbouger.fr/">Visiter le site <br> "mangez bougez"</a></span></div>';
+
     var element = document.getElementById(idbtn);
     var element2 = document.getElementById(idimg);
     var position = 1000;
@@ -293,4 +306,3 @@ function Animer(idimg, idbtn)
         }
     }
 }
-

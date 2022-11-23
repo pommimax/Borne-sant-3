@@ -58,36 +58,36 @@ Page contenant le code PHP de notre projet
 
                 <div>
 
-                <label for="Age"> Quel âge avez vous ?</label>
+                    <label for="Age"> Quel âge avez vous ?</label>
 
                     <div>
-                        <input type="radio" name="Age" id="De 0 à 20 ans" value = "De 0 à 20 ans">
+                        <input type="radio" name="Age" id="De 0 à 20 ans" value = "20">
                         <label for="De 0 à 20 ans"> De 0 à 20 ans </label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Age" id="De 21 a 44 ans" value = "De 21 a 44 ans">
+                        <input type="radio" name="Age" id="De 21 a 44 ans" value = "44">
                         <label for="De 21 a 44 ans"> De 21 a 44 ans </label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Age" id="De 45 a 64 ans" value = "De 45 a 64 ans">
+                        <input type="radio" name="Age" id="De 45 a 64 ans" value = "64">
                         <label for="De 45 a 64 ans">De 45 a 64 ans</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Age" id="De 65 a 69 ans" value = "De 65 a 69 ans">
+                        <input type="radio" name="Age" id="De 65 a 69 ans" value = "69">
                         <label for="De 65 a 69 ans">De 65 a 69 ans</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="Age" id="70 ans et plus" value = "70 ans et plus">
+                        <input type="radio" name="Age" id="70 ans et plus" value = "70">
                         <label for="70 ans et plus"> 70 ans et plus</label>
                     </div>
                 </div>
 
                 <!-- Création bouton suivant -->
-                <button class="next" type="button">Suivant</button>
+                <button class="next" type="button" onclick="getAge()">Suivant</button>
 
             </div>
 
@@ -132,38 +132,38 @@ Page contenant le code PHP de notre projet
                 <!-- Q3 : Qualification de sa santé -->
                 <h1>Qualification santé</h1>
                 <div><label for="Sante"> Comment qualifieriez-vous votre santé ?</label></div>
-
                 <div id="conteneur">
-                        <div id="A droite">
-                            <div id="avatar" style="position:relative; height:150px; top:150px; width:100px; visibility:hidden; float:right; padding-right: 400px"><img src="./Image/avatarSourire.jpg" width="200px" height="auto"></div>
-                            <div id="avatar2" style="position: relative;height:100px;top:150px; width:100px; visibility:hidden; float:right; margin-right: -170px"><img src="./Image/avatarTriste.jpg" width="150px" height="auto"></div>
-                            <div id="bulle" style="position: relative;height:150px;width:27%;visibility:hidden;float:right;clear:right; top:-200px"><img src="./Image/bulle.png" width="200px" height="auto">
-                                <span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:120px"><a href="https://www.mangerbouger.fr/">Visiter le site <br> "mangez bougez"</a></span></div>
-                        </div>
+                    <div id="droite1">
+                    </div>
 
-                <table style="line-height: 150%;margin-left:35%;margin-right:40%" cellspacing="30">
+                    <table style="line-height: 100%;margin-left:35%;margin-right:40%" cellspacing="30">
 
-                    <tr>
-                        <td><input type="radio" name="Sante" id="Excellente" value = "Excellente" onclick="Animer('avatar','bulle')"></td>
-                        <td><label for="Excellente">Excellente</label></td>
-                    </tr>
+                        <tr>
+                            <td><input type="radio" name="Sante" id="Excellente" value = "Excellente" onclick="Animer('avatar','bulle')"></td>
+                            <td><label for="Excellente">Excellente</label></td>
+                        </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sante" id="Tres bonne" value = "Tres bonne"></td>
-                        <td><label for="Tres bonne"> Tres bonne </label></td>
-                    </tr>
+                        <tr>
+                            <td><input type="radio" name="Sante" id="Tres bonne" value = "Tres bonne" onclick="Animer('avatar','bulle')"></td>
+                            <td><label for="Tres bonne"> Tres bonne </label></td>
+                        </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sante" id="Bonne" value = "Bonne"></td>
-                        <td><label for="Bonne">Bonne</label></td>
-                    </tr>
+                        <tr>
+                            <td><input type="radio" name="Sante" id="Bonne" value = "Bonne" onclick="Animer('avatar','bulle')"></td>
+                            <td><label for="Bonne">Bonne</label></td>
+                        </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sante" id="Mauvaise" value = "Mauvaise" onclick="Animer('avatar2','bulle')"></td>
-                        <td><label for="Mauvaise">Mauvaise</label></td>
-                    </tr>
+                        <tr>
+                            <td><input type="radio" name="Sante" id="Moyenne" value = "Moyenne" onclick="Animer('avatar2','bulle')"></td>
+                            <td><label for="Moyenne">Moyenne</label></td>
+                        </tr>
 
-                </table></div>
+                        <tr>
+                            <td><input type="radio" name="Sante" id="Mauvaise" value = "Mauvaise" onclick="Animer('avatar2','bulle')"></td>
+                            <td><label for="Mauvaise">Mauvaise</label></td>
+                        </tr>
+
+                    </table></div>
                 <!-- Création boutons suivant et précédent -->
 
                 <button class="prev" type="button">Précédent</button>
