@@ -1,12 +1,9 @@
+<!--Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
+Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
+Page contenant le code PHP de notre projet
+-->
+
 <!DOCTYPE html>
-
-<!-- Page html dédiée au questionnaire 
-    Pommier maxime  ---  2022-->
-
-<!-- salut c julia la grosse méchante -->
-<!--coucou c max-->
-<!--salut c marie-->
-<!--salut c est roxane-->
 
 <!-- Initialisation de la page html et lien avec le css-->
 
@@ -335,7 +332,7 @@
             </div>
 
 
-        <!-- Nouveau formulaire pour conso -->
+               <!-- Nouveau formulaire pour conso -->
 
             <!-- Création Page 9 -->
 
@@ -348,26 +345,32 @@
             <div>
                 <label for="Alcool"> Consommez vous des boissons alcoolisées ? :</label>
 
-                 <radio onchange="togg()" name="Alcool" id="Alcool" required>
+                <radio onchange="afficheBtn()" class = "Alcool" name="Alcool" id="AlcID" required>
+
                 <div>
-                    <input type="radio" name="Alcool" id="Oui" value = "Oui">
+                    <input type="radio" class="Alcool" name="Alcool" id="AlcID1" value = "Oui">
                     <label for="Oui">Oui</label>
+
                 </div>
                 <div>
-                    <input type="radio" name="Alcool" id="Non" value = "Non">
+                    <input type="radio" class="Alcool" name ="Alcool" id="AlcID2" value = "Non">
                     <label for="Non">Non</label>
                 </div>
                 <div>
-                    <input type="radio" name="Alcool" id="Occasionnellement" value = "Occasionnellement">
+                    <input type="radio" class="Alccol"name="Alcool"id="AlcID3" value = "Occasionnellement">
                     <label for="Occasionnellement">Occasionnellement</label>
                 </div>
+           
+
 
             </div>
 
+
                 <!-- Création boutons suivant et précédent -->
 
-                <button class="prev" type="button">Précédent</button>
-                <button class="next" type="button">Suivant</button>
+                <button class="prev" id="BtnPrec" type="button">Précédent</button>
+                <button class="next" id= "BtnSuiv" type="button">Suivant</button>
+                <button class="nextA" id="BtnSuivA" type="button">Suivant</button>
 
             </div>
 
@@ -408,7 +411,7 @@
                    <h1>Alcool</h1>
 
             <div>
-                <label for="AQ1"> Combien de verres standart buvez-vous les jours où vous buvez de l'alcool ? :</label>
+                <label for="AQ1"> Combien de verres standard buvez-vous les jours où vous buvez de l'alcool ? :</label>
 
                 <div>
                     <input type="radio" name="AQ2" id="1 ou 2" value = "1 ou 2">
@@ -555,9 +558,10 @@
 
 
                 <!-- Création boutons suivant et terminer -->
-
+                <button class="prevA" type="button">Précédent</button>
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
+
 
             </div>
 
@@ -572,24 +576,26 @@
 
             <div>
                 <label for="Cannabis"> Consommez vous du cannabis? :</label>
+                <radio onchange="afficheBtnC()" class = "Alcool" name="Alcool" id="AlcID" required>
                 <div>
-                    <input type="radio" name="Cannabis" id="Oui" value = "Oui">
+                    <input type="radio" name="Cannabis" id="CanID1" value = "Oui">
                     <label for="Oui">Oui</label>
                 </div>
                 <div>
-                    <input type="radio" name="Cannabis" id="Non" value = "Non">
+                    <input type="radio" name="Cannabis" id="CanID2" value = "Non">
                     <label for="Non">Non</label>
                 </div>
                 <div>
-                    <input type="radio" name="Cannabis" id="Occasionnellement" value = "Occasionnellement">
+                    <input type="radio" name="Cannabis" id="CanID3" value = "Occasionnellement">
                     <label for="Occasionnellement">Occasionnellement</label>
                 </div>
             </div>
 
-                <!-- Création boutons suivant et terminer -->
+                <!-- Création boutons suivant et précédent -->
 
-                <button class="prev" type="button">Précédent</button>
-                <button class="next" type="button">Suivant</button>
+                <button class="prev" id="BtnPrecC" type="button">Précédent</button>
+                <button class="next" id= "BtnSuivC" type="button">Suivant</button>
+                <button class="nextC" id="BtnSuivAC" type="button">Suivant</button>
 
 
             </div>
@@ -855,15 +861,49 @@
                 </div>
             </div>
 
-                <!-- Création boutons suivant et terminer -->
+            <!-- Création boutons précédant et suivant -->
 
-                <button class="prev" type="button">Précédent</button>
-                <button>Terminer</button>
-
-
+            <button class="prev" type="button">Précédent</button>
+            <button class="next" type="button">Suivant</button>
+            
             </div>
 
+            <!-- Création page 24 -->
 
+            <div class="page" id="page24">
+
+                <!-- fin du questionnaire-->
+
+                <h1>Fin du questionnaire</h1>
+
+                <h2>Ce questionnaire vous a permis de réaliser une première évaluation de vos habitudes de vie, nous vous encourageons à les approfondir en prenant contact avec votre médecin traitant ou un autre professionnel de santé.
+                </h2>
+
+            <div>
+                <label for="Sondage"> Ce questionnaire vous apparait-il utile? </label>
+
+                <div>
+                    <input type="radio" name="Sondage" id="Pas du tout" value="Pas du tout">
+                    <label for="Pas du tout"> Pas du tout</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Sondage" id="moyennement" value="moyennement">
+                    <label for="moyennement"> moyennement</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Sondage" id="Beaucoup" value="Beaucoup">
+                    <label for="Beaucoup"> Beaucoup</label>
+                </div>
+            </div>
+
+            <!-- Création boutons suivant et terminer -->
+
+            <button class="prev" type="button">Précédent</button>
+            <button>Terminer</button>
+                
+            </div>
 
         </form>
         

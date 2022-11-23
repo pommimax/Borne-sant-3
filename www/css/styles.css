@@ -1,3 +1,8 @@
+/* Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
+Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
+Page contenant le code CSS de notre projet
+*/
+
 
 main{
     width: 80%;
@@ -119,7 +124,31 @@ form div > input, form div > select, form div > textarea {
     color:blue;
     } 
 
-div.page8{    
-display: none;
-}
+/* On cache les boutons suivant et précedent pour les pages alcool et cannabis
+*/
+ 
+    #BtnPrec {
+        visibility: hidden;
+    }
+
+    #BtnSuiv{
+        visibility: hidden;
+    }
+
+    #BtnSuivA{
+        visibility: hidden;
+    }
+
+    #BtnPrecC{
+        visibility: hidden;
+    }
+
+    #BtnSuivC{
+        visibility: hidden;
+    }
+
+    #BtnSuivAC{
+        visibility: hidden;
+    }
+
 
