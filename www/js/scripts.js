@@ -1,7 +1,7 @@
 /* Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code Javascript de notre projet
-* /
+*/
 
 
 // On va chercher les différents éléments de notre page
