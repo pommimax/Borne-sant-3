@@ -80,6 +80,7 @@ function pageSuivante(){
     for(let page of pages){
         page.style.display = "none"
     }
+    i = i + 1;
 
     // On affiche la page suivante
     this.parentElement.nextElementSibling.style.display = "initial"
@@ -94,6 +95,8 @@ function pagePrecedente(){
     for(let page of pages){
         page.style.display = "none"
     }
+
+    i = i - 1
 
     // On affiche la page suivante
     this.parentElement.previousElementSibling.style.display = "initial"
@@ -271,25 +274,27 @@ function getAge()
 }
 
 
-function Animer(idimg, idbtn)
-{
-    var div = document.getElementById('droite1');
-    div.innerHTML = '<div id="avatar" style="position:relative; height:150px; top:150px; width:100px; visibility:hidden; float:right; margin-right: 300px"><img src="./Image/'+ age +'J.jpg" width="150px" height="auto"></div>' +
-        '<div id="avatar2" style="position: relative;height:100px;top:200px; width:100px; visibility:hidden; float:right; margin-right: -100px"><img src="./Image/'+age+'T.jpg" width="150px" height="auto"></div>' +
-        '<div id="bulle" style="position: relative;height:150px;width:27%;visibility:hidden;float:right;clear:right; top:-150px"><img src="./Image/bulle.png" width="200px" height="auto">' +
-        '<span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:120px"><a href="https://www.mangerbouger.fr/">Visiter le site <br> "mangez bougez"</a></span></div>';
+var i = -2;
 
-    var element = document.getElementById(idbtn);
+function Animer(idimg, txtBulle)
+{
+    var div = document.getElementById('droite' + i);
+    div.innerHTML = '<div id="avatarJ'+i+'" style="position:relative; height:150px; top:100px; width:100px; visibility:hidden; float:right; margin-right: 250px"><img src="./Image/'+ age +'J.jpg" width="150px" height="auto"></div><div id="avatarT'+i+'" style="position: relative;height:100px;top:100px; width:100px; visibility:hidden; float:right; margin-right: -100px"><img src="./Image/'+age+'T.jpg" width="150px" height="auto"></div><div id="bulle'+i+'" style="position: relative;height:150px;width:27%;visibility:hidden;float:right;clear:right; top:-150px"><img src="./Image/bulle.png" width="200px" height="auto"><span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:120px">'+ txtBulle +'</span></div>';
+
+
     var element2 = document.getElementById(idimg);
     var position = 1000;
-    document.getElementById('avatar').style.visibility='hidden';
-    document.getElementById('avatar2').style.visibility='hidden';
+    document.getElementById('avatarJ'+i).style.visibility='hidden';
+    document.getElementById('avatarT'+i).style.visibility='hidden';
+    document.getElementById('bulle' + i).style.visibility='hidden';
 
-    document.getElementById('bulle').style.visibility='hidden';
-
+    if(txtBulle !== 'non')
+    {
+        var element = document.getElementById('bulle'+i);
+        element.style.visibility='visible';
+    }
 
     //.style.visibility='hidden'
-    element.style.visibility='visible';
     element2.style.visibility='visible';
     var id=setInterval(mvt,5);
     function mvt()
@@ -301,7 +306,10 @@ function Animer(idimg, idbtn)
         else
         {
             position = position - 15;
-            element.style.left = position + "px";
+            if(txtBulle !== 'non')
+            {
+                element.style.left = position + "px";
+            }
             element2.style.left = position + "px";
         }
     }
@@ -314,18 +322,24 @@ function ChoixSlider(){
     console.log(value)
         if (value <= 20){
             santeChoix ="Mauvaise"
+            Animer('avatarT1','non')
         }
-        else if (21 <= value && value<= 40){
+        else if (value<= 40){
             santeChoix ="Moyenne"
+            Animer('avatarT1','non')
         }
-        else if(41<=value && value <=60){
+        else if(value <=60){
             santeChoix = "Bonne"
+            Animer('avatarJ1','non')
         }
-        else if(61<= value && value <=80){
+        else if(value <=80){
             santeChoix = "Très bonne"
+            Animer('avatarJ1','non')
         }
-        else if(81<=value){
+        else
+        {
             santeChoix="Excellente"
+            Animer('avatarJ1','non')
         }
 
     document.getElementById("demo").innerHTML = value

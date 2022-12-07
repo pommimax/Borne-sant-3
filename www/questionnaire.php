@@ -1,4 +1,4 @@
-<!--Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
+<!--Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code PHP de notre projet
 -->
@@ -60,30 +60,34 @@ Page contenant le code PHP de notre projet
 
                     <label for="Age"> Quel âge avez vous ?</label>
 
-                    <div>
-                        <input type="radio" name="Age" id="De 0 à 20 ans" value = "20">
-                        <label for="De 0 à 20 ans"> De 0 à 20 ans </label>
-                    </div>
+                    <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30">
 
-                    <div>
-                        <input type="radio" name="Age" id="De 21 a 44 ans" value = "44">
-                        <label for="De 21 a 44 ans"> De 21 a 44 ans </label>
-                    </div>
+                        <tr>
+                            <td><input type="radio" name="Age" id="De 0 à 20 ans" value = "20"></td>
+                            <td><label for="De 0 à 20 ans"> De 0 à 20 ans </label></td>
+                        </tr>
 
-                    <div>
-                        <input type="radio" name="Age" id="De 45 a 64 ans" value = "64">
-                        <label for="De 45 a 64 ans">De 45 a 64 ans</label>
-                    </div>
+                        <tr>
+                            <td><input type="radio" name="Age" id="De 21 a 44 ans" value = "44"></td>
+                            <td><label for="De 21 a 44 ans"> De 21 a 44 ans </label></td>
+                        </tr>
 
-                    <div>
-                        <input type="radio" name="Age" id="De 65 a 69 ans" value = "69">
-                        <label for="De 65 a 69 ans">De 65 a 69 ans</label>
-                    </div>
+                        <tr>
+                            <td><input type="radio" name="Age" id="De 45 a 64 ans" value = "64"></td>
+                            <td><label for="De 45 a 64 ans">De 45 a 64 ans</label></td>
+                        </tr>
 
-                    <div>
-                        <input type="radio" name="Age" id="70 ans et plus" value = "70">
-                        <label for="70 ans et plus"> 70 ans et plus</label>
-                    </div>
+                        <tr>
+                            <td><input type="radio" name="Age" id="De 65 a 69 ans" value = "69"></td>
+                            <td><label for="De 65 a 69 ans">De 65 a 69 ans</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="Age" id="70 ans et plus" value = "70"></td>
+                            <td><label for="70 ans et plus"> 70 ans et plus</label></td>
+                        </tr>
+
+                    </table>
                 </div>
 
                 <!-- Création bouton suivant -->
@@ -102,20 +106,24 @@ Page contenant le code PHP de notre projet
                 <div>
 
                 <label for="Sexe">Sexe:</label>
-                    <div>
-                        <input type="radio" name="Sexe" id="Homme" value = "Homme">
-                        <label for="Homme"> Homme </label>
-                    </div>
 
-                    <div>
-                        <input type="radio" name="Sexe" id="Femme" value = "Femme">
-                        <label for="Femme"> Femme </label>
-                    </div>
+                    <table style="line-height: 150%;margin-left:40%;margin-right:50%" cellspacing="30">
+                        <tr>
+                            <td><input type="radio" name="Sexe" id="Homme" value = "Homme"></td>
+                            <td><label for="Homme"> Homme </label></td>
+                        </tr>
 
-                    <div>
-                        <input type="radio" name="Sexe" id="Autres" value = "Autres">
-                        <label for="Autres">Autres</label>
-                    </div>
+                        <tr>
+                            <td><input type="radio" name="Sexe" id="Femme" value = "Femme"></td>
+                            <td><label for="Femme"> Femme </label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="Sexe" id="Autres" value = "Autres"></td>
+                            <td><label for="Autres">Autres</label></td>
+                        </tr>
+
+                    </table>
 
                 </div>
 
@@ -128,16 +136,19 @@ Page contenant le code PHP de notre projet
 
             <!-- Création de la page 3-->
 
-            <div class="page" id="page3">
+            <div class="page" id="page4">
 
                 <!-- Q3 : Qualification de sa santé -->
 
                 <h1>Qualification santé</h1>
+                <div id="conteneur">
+                    <div id="droite1">
+                    </div>
                 <div class = "slidecontainer">
                 <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
                 <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSlider()">
                 <p> Value : <span id="demo"></span></p>
-                </div>
+                </div></div>
                     
                 <!-- Création boutons suivant et précédent -->
 
@@ -157,22 +168,34 @@ Page contenant le code PHP de notre projet
 
                 <div>
 
-                <label for="Alimentation"> Pensez-vous que votre alimentation a un impact sur votre santé ?</label>
+                    <label for="Alimentation"> Pensez-vous que votre alimentation a un impact sur votre santé ?</label>
 
-                    <div>
-                        <input type="radio" name="Alimentation" id="Un peu" value = "Un peu">
-                        <label for="Un peu"> Un peu </label>
-                    </div>
+                    <div id="conteneur">
+                        <div id="droite2">
+                        </div>
 
-                    <div>
-                        <input type="radio" name="Alimentation" id="Beaucoup" value = "Beaucoup">
-                        <label for="Beaucoup"> Beaucoup </label>
-                    </div>
+                        <table style="line-height: 150%;margin-left:39%;margin-right:40%" cellspacing="30">
 
-                    <div>
-                        <input type="radio" name="Alimentation" id="Pas du tout" value = "Pas du tout">
-                        <label for="Bonne">Bonne</label>
-                    </div>
+                            <tr>
+                                <td><input type="radio" name="Alimentation" id="Un peu" value = "Un peu" onclick="Animer('avatarJ2','<a href=https://www.mangerbouger.fr>Visiter le site <br> mangez bougez</a>')"></td>
+                                <td><label for="Un peu"> Un peu </label></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" name="Alimentation" id="Beaucoup" value = "Beaucoup" onclick="Animer('avatarJ2','<a href=https://www.mangerbouger.fr>Visiter le site <br> mangez bougez</a>')"></td>
+                                <td><label for="Beaucoup"> Beaucoup </label></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" name="Alimentation" id="Pas du tout" value = "Pas du tout" onclick="Animer('avatarT2','<a href=https://www.mangerbouger.fr>Visiter le site <br> mangez bougez</a>')"></td>
+                                <td><label for="Bonne">Bonne</label></td>
+                            </tr>
+
+
+
+                        </table></div>
+
+
 
                 </div>
 
@@ -194,20 +217,28 @@ Page contenant le code PHP de notre projet
                 <label for="ActivitePhysique"> Pratiquez-vous une activité physique quotidienne suffisante ? (marche, jardinage, vélo, ménage…) 
                 </label>
 
-                    <div>
-                        <input type="radio" name="ActivitePhysique" id="Oui" value = "Oui">
-                        <label for="Oui"> Oui </label>
-                    </div>
+                    <div id="conteneur">
+                        <div id="droite3">
+                        </div>
 
-                    <div>
-                        <input type="radio" name="ActivitePhysique" id="Non" value = "Non">
-                        <label for="Non">Non</label>
-                    </div>
+                        <table style="line-height: 150%;margin-left:38%;margin-right:35%" cellspacing="30">
 
-                    <div>
-                        <input type="radio" name="Ne sais pas" id="Ne sais pas" value = "Ne sais pas">
-                        <label for="Ne sais pas">Ne sais pas</label>
-                    </div>
+                            <tr>
+                                <td><input type="radio" name="ActivitePhysique" id="Oui" value = "Oui" onclick="Animer('avatarJ3','non')"></td>
+                                <td><label for="Oui"> Oui </label></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" name="ActivitePhysique" id="Non" value = "Non" onclick="Animer('avatarT3','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" name="Ne sais pas" id="Ne sais pas" value = "Ne sais pas" onclick="Animer('avatarT3','non')"></td>
+                                <td><label for="Ne sais pas">Ne sais pas</label></td>
+                            </tr>
+
+                        </table></div>
 
                 </div>
 
@@ -229,30 +260,38 @@ Page contenant le code PHP de notre projet
                 <div>
                 <label for="Corpulence"> Considérez-vous que vous êtes :</label>
 
-                    <div>
-                        <input type="radio" name="Corpulence" id="Beaucoup trop maigre" value = "Beaucoup trop maigre">
-                        <label for="Beaucoup trop maigre">Beaucoup trop maigre</label>
-                    </div>
+                    <div id="conteneur">
+                        <div id="droite4">
+                        </div>
 
-                    <div>
-                        <input type="radio" name="Corpulence" id="Un peu trop maigre" value = "Un peu trop maigre">
-                        <label for="Un peu trop maigre">Un peu trop maigre</label>
-                    </div>
+                        <table style="line-height: 150%;margin-left:28%;margin-right:25%" cellspacing="30">
 
-                    <div>
-                        <input type="radio" name="Corpulence" id=" D un poids normal" value = " D un poids normal">
-                        <label for=" D un poids normal"> D un poids normal</label>
-                    </div>
+                            <tr>
+                                <td><input type="radio" name="Corpulence" id="Beaucoup trop maigre" value = "Beaucoup trop maigre" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
+                                <td><label for="Beaucoup trop maigre">Beaucoup trop maigre</label></td>
+                            </tr>
 
-                    <div>
-                        <input type="radio" name="Corpulence" id="Un peu en surpoids" value = "Un peu en surpoids">
-                        <label for="Un peu en surpoids">Un peu en surpoids</label>
-                    </div>
+                            <tr>
+                                <td><input type="radio" name="Corpulence" id="Un peu trop maigre" value = "Un peu trop maigre" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
+                                <td><label for="Un peu trop maigre">Un peu trop maigre</label></td>
+                            </tr>
 
-                    <div>
-                        <input type="radio" name="Corpulence" id="Avec un surpoids important" value = "Avec un surpoids important">
-                        <label for="Avec un surpoids important">Avec un surpoids important</label>
-                    </div>
+                            <tr>
+                                <td><input type="radio" name="Corpulence" id=" D un poids normal" value = " D un poids normal" onclick="Animer('avatarJ4','non')"></td>
+                                <td><label for=" D un poids normal"> D un poids normal</label></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" name="Corpulence" id="Un peu en surpoids" value = "Un peu en surpoids" onclick="Animer('avatarJ4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
+                                <td><label for="Un peu en surpoids">Un peu en surpoids</label></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" name="Corpulence" id="Avec un surpoids important" value = "Avec un surpoids important" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
+                                <td><label for="Avec un surpoids important">Avec un surpoids important</label></td>
+                            </tr>
+
+                        </table></div>
 
                 </div>
 
@@ -277,26 +316,35 @@ Page contenant le code PHP de notre projet
             <div>
                 <label for="Sommeil"> Comment évaluez-vous votre qualité du Sommeil :</label>
 
-                <div>
-                    <input type="radio" name="Sommeil" id="Excellente" value = "Excellente">
-                    <label for="Excellente">Excellente</label>
-                </div>
-                <div>
-                    <input type="radio" name="Sommeil" id="Tres bonne" value = "Tres bonne">
-                    <label for="Tres bonne">Tres bonne</label>
-                </div>
-                <div>
-                    <input type="radio" name="Sommeil" id="Bonne" value = "Bonne">
-                    <label for="Bonne">Bonne</label>
-                </div>
-                <div>
-                    <input type="radio" name="Sommeil" id="Moyenne" value = "Moyenne">
-                    <label for="Moyenne">Moyenne</label>
-                </div>
-                <div>
-                    <input type="radio" name="Sommeil" id="Mauvaise" value = "Mauvaise">
-                    <label for="Mauvaise">Mauvaise</label>
-                </div>
+                <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="Sommeil" id="Excellente" value = "Excellente"></td>
+                        <td><label for="Excellente">Excellente</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Sommeil" id="Tres bonne" value = "Tres bonne"></td>
+                        <td><label for="Tres bonne">Tres bonne</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Sommeil" id="Bonne" value = "Bonne"></td>
+                        <td><label for="Bonne">Bonne</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Sommeil" id="Moyenne" value = "Moyenne"></td>
+                        <td><label for="Moyenne">Moyenne</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Sommeil" id="Mauvaise" value = "Mauvaise"></td>
+                        <td><label for="Mauvaise">Mauvaise</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons précedent et suivant -->
@@ -322,21 +370,24 @@ Page contenant le code PHP de notre projet
 
                 <radio onchange="afficheBtn()" class = "Alcool" name="Alcool" id="AlcID" required>
 
-                <div>
-                    <input type="radio" class="Alcool" name="Alcool" id="AlcID1" value = "Oui">
-                    <label for="Oui">Oui</label>
+                    <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                </div>
-                <div>
-                    <input type="radio" class="Alcool" name ="Alcool" id="AlcID2" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
-                <div>
-                    <input type="radio" class="Alccol"name="Alcool"id="AlcID3" value = "Occasionnellement">
-                    <label for="Occasionnellement">Occasionnellement</label>
-                </div>
-           
+                        <tr>
+                            <td><input type="radio" class="Alcool" name="Alcool" id="AlcID1" value = "Oui"></td>
+                            <td><label for="Oui">Oui</label></td>
+                        </tr>
 
+                        <tr>
+                            <td><input type="radio" class="Alcool" name ="Alcool" id="AlcID2" value = "Non"></td>
+                            <td><label for="Non">Non</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" class="Alccol"name="Alcool"id="AlcID3" value = "Occasionnellement"></td>
+                            <td><label for="Occasionnellement">Occasionnellement</label></td>
+                        </tr>
+
+                    </table>
 
             </div>
 
@@ -356,20 +407,27 @@ Page contenant le code PHP de notre projet
                 <h1>Alcool</h1>
 
             <div>
-                <label for="AQ1"> A quelle fréquence consommez vous de l'alcool? :</label>
+                <label for="AQ1"> A quelle fréquence consommez-vous de l'alcool ? :</label>
 
-                <div>
-                    <input type="radio" name="AQ1" id="Jamais" value = "Jamais">
-                    <label for="Jamais">Jamais</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ1" id="1 fois par mois" value = "1 fois par mois">
-                    <label for="1 fois par mois">1 fois par mois</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ1" id="2 à 4 fois par mois" value = "2 à 4 fois par mois">
-                    <label for="2 à 4 fois par mois">2 à 4 fois par mois</label>
-                </div>
+                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="AQ1" id="Jamais" value = "Jamais"></td>
+                        <td><label for="Jamais">Jamais</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ1" id="1 fois par mois" value = "1 fois par mois"></td>
+                        <td><label for="1 fois par mois">1 fois par mois</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ1" id="2 à 4 fois par mois" value = "2 à 4 fois par mois"></td>
+                        <td><label for="2 à 4 fois par mois">2 à 4 fois par mois</label></td>
+                    </tr>
+
+                </table>
+
                 </div>
                 <!-- Création boutons précédent et suivant -->
 
@@ -388,28 +446,34 @@ Page contenant le code PHP de notre projet
             <div>
                 <label for="AQ1"> Combien de verres standard buvez-vous les jours où vous buvez de l'alcool ? :</label>
 
-                <div>
-                    <input type="radio" name="AQ2" id="1 ou 2" value = "1 ou 2">
-                    <label for="1 ou 2">1 ou 2</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ2" id="3 ou 4" value = "3 ou 4">
-                    <label for="3 ou 4">3 ou 4</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ2" id="5 ou 6" value = "5 ou 6">
-                    <label for="5 ou 6">5 ou 6</label>
-                </div>
+                <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
 
-                <div>
-                    <input type="radio" name="AQ2" id="7 à 9" value = "7 à 9">
-                    <label for="7 à 9">7 à 9</label>
-                </div>
+                    <tr>
+                        <td><input type="radio" name="AQ2" id="1 ou 2" value = "1 ou 2"></td>
+                        <td><label for="1 ou 2">1 ou 2</label></td>
+                    </tr>
 
-                <div>
-                    <input type="radio" name="AQ2" id="10 et plus" value = "10 et plus">
-                    <label for="10 et plus">10 et plus</label>
-                </div>
+                    <tr>
+                        <td><input type="radio" name="AQ2" id="3 ou 4" value = "3 ou 4"></td>
+                        <td><label for="3 ou 4">3 ou 4</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ2" id="5 ou 6" value = "5 ou 6"></td>
+                        <td><label for="5 ou 6">5 ou 6</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ2" id="7 à 9" value = "7 à 9"></td>
+                        <td><label for="7 à 9">7 à 9</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ2" id="10 et plus" value = "10 et plus"></td>
+                        <td><label for="10 et plus">10 et plus</label></td>
+                    </tr>
+
+                </table>
 
                 </div>
                 <!-- Création boutons précédent et suivant -->
@@ -426,16 +490,21 @@ Page contenant le code PHP de notre projet
                 <h1>Alcool</h1>
 
             <div>
-                <label for="AQ3"> Est ce que votre entourage vous a fait des remarques concernant votre consomation d'alcool ?  :</label>
+                <label for="AQ3"> Est ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ? :</label>
 
-                <div>
-                    <input type="radio" name="AQ3" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ3" id="Non" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="AQ3" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ3" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
     
 
                 </div>
@@ -453,16 +522,22 @@ Page contenant le code PHP de notre projet
                 <h1>Alcool</h1>
 
             <div>
-                <label for="AQ4">Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme?  :</label>
+                <label for="AQ4">Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ? :</label>
 
-                <div>
-                    <input type="radio" name="AQ4" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ4" id="Non" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="AQ4" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ4" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
     
 
@@ -481,21 +556,23 @@ Page contenant le code PHP de notre projet
 
             <div>
 
-                <label for="AQ4">Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ?  :</label>
+                <label for="AQ4">Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ? :</label>
 
-                <div>
-                    <input type="radio" name="AQ5" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="AQ5" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="AQ5" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ5" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
-        
-
-            
 
                 <!-- Création boutons précédent et suivant -->
 
@@ -516,27 +593,32 @@ Page contenant le code PHP de notre projet
             <h1>Tabac</h1>
 
             <div>
-                <label for="Tabac"> Consommez vous du tabac? :</label>
-                <div>
-                    <input type="radio" name="Tabac" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="Tabac" id="Non" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
-                <div>
-                    <input type="radio" name="Tabac" id="Occasionnellement" value = "Occasionnellement">
-                    <label for="Occasionnellement">Occasionnellement</label>
-                </div>
+                <label for="Tabac"> Consommez vous du tabac ?</label>
+
+                <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="Tabac" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Tabac" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Tabac" id="Occasionnellement" value = "Occasionnellement"></td>
+                        <td><label for="Occasionnellement">Occasionnellement</label></td>
+                    </tr>
+
+                </table>
+
             </div>
-
-
-                <!-- Création boutons suivant et terminer -->
+                <!-- Création boutons suivants et terminer -->
                 <button class="prevA" type="button">Précédent</button>
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
-
 
             </div>
 
@@ -550,20 +632,27 @@ Page contenant le code PHP de notre projet
                 <h1>Cannabis</h1>
 
             <div>
-                <label for="Cannabis"> Consommez vous du cannabis? :</label>
+                <label for="Cannabis"> Consommez vous du cannabis ? :</label>
                 <radio onchange="afficheBtnC()" class = "Alcool" name="Alcool" id="AlcID" required>
-                <div>
-                    <input type="radio" name="Cannabis" id="CanID1" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="Cannabis" id="CanID2" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
-                <div>
-                    <input type="radio" name="Cannabis" id="CanID3" value = "Occasionnellement">
-                    <label for="Occasionnellement">Occasionnellement</label>
-                </div>
+
+                    <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
+
+                        <tr>
+                            <td><input type="radio" name="Cannabis" id="CanID1" value = "Oui"></td>
+                            <td><label for="Oui">Oui</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="Cannabis" id="CanID2" value = "Non"></td>
+                            <td><label for="Non">Non</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="Cannabis" id="CanID3" value = "Occasionnellement"></td>
+                            <td><label for="Occasionnellement">Occasionnellement</label></td>
+                        </tr>
+
+                    </table>
             </div>
 
                 <!-- Création boutons suivant et précédent -->
@@ -585,15 +674,20 @@ Page contenant le code PHP de notre projet
 
                 <label for="CQ1">Avez-vous déjà fumé du cannabis avant midi ?</label>
 
-                <div>
-                    <input type="radio" name="CQ1" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="CQ1" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="CQ1" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="CQ1" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -613,15 +707,20 @@ Page contenant le code PHP de notre projet
 
                 <label for="CQ2">Avez-vous déjà fumé du cannabis lorque vous étiez seul(e) ?</label>
 
-                <div>
-                    <input type="radio" name="CQ2" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="CQ2" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="CQ2" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="CQ2" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -641,15 +740,19 @@ Page contenant le code PHP de notre projet
 
                 <label for="CQ3">Avez-vous déjà eu des problèmes de mémoire quand vous fumez du cannabis ?</label>
 
-                <div>
-                    <input type="radio" name="CQ3" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="CQ3" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="CQ3" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="CQ3" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
 
             </div>
 
@@ -671,15 +774,20 @@ Page contenant le code PHP de notre projet
 
                 <label for="CQ4">Des amis ou des membres de votre famille vous ont-ils déjà dit que vous devriez réduire votre consommation de cannabis?</label>
 
-                <div>
-                    <input type="radio" name="CQ4" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="CQ4" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="CQ4" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="CQ4" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -699,15 +807,20 @@ Page contenant le code PHP de notre projet
 
                 <label for="CQ5">Avez-vous déjà essayé de réduire ou d'arrêter votre consommation de cannabis sans y parvenir ?</label>
 
-                <div>
-                    <input type="radio" name="CQ5" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="CQ5" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="CQ5" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="CQ5" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -727,15 +840,20 @@ Page contenant le code PHP de notre projet
 
                 <label for="CQ6">Avez-vous déjà eu des problèmes à cause de votre consommation de cannabis (dispute, bagarre, accident, mauvais résultat à l'école, etc.)?</label>
 
-                <div>
-                    <input type="radio" name="CQ6" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="CQ6" id="Non" value = "Non">
-                    <label for="Non">Non</label>
+                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                </div>
+                    <tr>
+                        <td><input type="radio" name="CQ6" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="CQ6" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -756,26 +874,32 @@ Page contenant le code PHP de notre projet
 
             <div>
                 <label for="HeroineCocaine"> Consommez vous de l'héroine ou de la cocaine? :</label>
-                <div>
-                    <input type="radio" name="HeroineCocaine" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="HeroineCocaine" id="Non" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
-                <div>
-                    <input type="radio" name="HeroineCocaine" id="Occasionnellement" value = "Occasionnellement">
-                    <label for="Occasionnellement">Occasionnellement</label>
-                </div>
-            </div>
 
+                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="HeroineCocaine" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="HeroineCocaine" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="HeroineCocaine" id="Occasionnellement" value = "Occasionnellement"></td>
+                        <td><label for="Occasionnellement">Occasionnellement</label></td>
+                    </tr>
+
+                </table>
+
+            </div>
 
                 <!-- Création boutons suivant et terminer -->
 
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
-
 
             </div>
 
@@ -790,18 +914,26 @@ Page contenant le code PHP de notre projet
 
             <div>
                 <label for="AutresSubstances"> Consommez vous d'autres substances telles que le gaz hilarant, du LSD, de l'extasie ou des médicaments?</label>
-                <div>
-                    <input type="radio" name="AutresSubstances" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="AutresSubstances" id="Non" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
-                <div>
-                    <input type="radio" name="AutresSubstances" id="Occasionnellement" value = "Occasionnellement">
-                    <label for="Occasionnellement">Occasionnellement</label>
-                </div>
+
+                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="AutresSubstances" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AutresSubstances" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AutresSubstances" id="Occasionnellement" value = "Occasionnellement"></td>
+                        <td><label for="Occasionnellement">Occasionnellement</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
                 <!-- Création boutons suivant et terminer -->
@@ -822,18 +954,26 @@ Page contenant le code PHP de notre projet
 
             <div>
                 <label for="AutresPratiques"> Les pratiques suivantes : Jeux d'argent, jeux vidéo, sexe, sport, écrans, ont elles un impact sur votre vie personelle où professionelle (financier, isolement, perte de travail, perte de réseau social...) :</label>
-                <div>
-                    <input type="radio" name="AutresPratiques" id="Oui" value = "Oui">
-                    <label for="Oui">Oui</label>
-                </div>
-                <div>
-                    <input type="radio" name="AutresPratiques" id="Non" value = "Non">
-                    <label for="Non">Non</label>
-                </div>
-                <div>
-                    <input type="radio" name="AutresPratiques" id="Occasionnellement" value = "Occasionnellement">
-                    <label for="Occasionnellement">Occasionnellement</label>
-                </div>
+
+                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+
+                    <tr>
+                        <td><input type="radio" name="AutresPratiques" id="Oui" value = "Oui"></td>
+                        <td><label for="Oui">Oui</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AutresPratiques" id="Non" value = "Non"></td>
+                        <td><label for="Non">Non</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AutresPratiques" id="Occasionnellement" value = "Occasionnellement"></td>
+                        <td><label for="Occasionnellement">Occasionnellement</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
             <!-- Création boutons précédant et suivant -->
@@ -849,28 +989,33 @@ Page contenant le code PHP de notre projet
 
                 <!-- fin du questionnaire-->
 
-                <h1>Fin du questionnaire</h1>
+                <h2>Fin du questionnaire</h2>
 
-                <h2>Ce questionnaire vous a permis de réaliser une première évaluation de vos habitudes de vie, nous vous encourageons à les approfondir en prenant contact avec votre médecin traitant ou un autre professionnel de santé.
-                </h2>
+                <h4>Ce questionnaire vous a permis de réaliser une première évaluation de vos habitudes de vie, nous vous encourageons à les approfondir en prenant contact avec votre médecin traitant ou un autre professionnel de santé.
+                </h4>
 
             <div>
                 <label for="Sondage"> Ce questionnaire vous apparait-il utile? </label>
 
-                <div>
-                    <input type="radio" name="Sondage" id="Pas du tout" value="Pas du tout">
-                    <label for="Pas du tout"> Pas du tout</label>
-                </div>
+                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                <div>
-                    <input type="radio" name="Sondage" id="moyennement" value="moyennement">
-                    <label for="moyennement"> moyennement</label>
-                </div>
+                    <tr>
+                        <td><input type="radio" name="Sondage" id="Pas du tout" value="Pas du tout"></td>
+                        <td><label for="Pas du tout"> Pas du tout</label></td>
+                    </tr>
 
-                <div>
-                    <input type="radio" name="Sondage" id="Beaucoup" value="Beaucoup">
-                    <label for="Beaucoup"> Beaucoup</label>
-                </div>
+                    <tr>
+                        <td><input type="radio" name="Sondage" id="moyennement" value="moyennement"></td>
+                        <td><label for="moyennement"> moyennement</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="Sondage" id="Beaucoup" value="Beaucoup"></td>
+                        <td><label for="Beaucoup"> Beaucoup</label></td>
+                    </tr>
+
+                </table>
+
             </div>
 
             <!-- Création boutons suivant et terminer -->
