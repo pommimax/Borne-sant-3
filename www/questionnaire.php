@@ -60,6 +60,7 @@ Page contenant le code PHP de notre projet
 
                     <label for="Age"> Quel âge avez vous ?</label>
 
+<<<<<<< Updated upstream
                     <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30">
 
                         <tr>
@@ -88,6 +89,32 @@ Page contenant le code PHP de notre projet
                         </tr>
 
                     </table>
+=======
+                    <div>
+                        <input type="radio" name="Age" id="De 0 à 20 ans" value = "De 0 à 20 ans">
+                        <label for="De 0 à 20 ans"> De 0 à 20 ans </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Age" id="De 21 a 44 ans" value = "De 21 a 44 ans">
+                        <label for="De 21 a 44 ans"> De 21 a 44 ans </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Age" id="De 45 a 64 ans" value = "De 45 a 64 ans">
+                        <label for="De 45 a 64 ans">De 45 a 64 ans</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Age" id="De 65 a 69 ans" value = "De 65 a 69 ans">
+                        <label for="De 65 a 69 ans">De 65 a 69 ans</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="Age" id="70 ans et plus" value = "70 ans et plus">
+                        <label for="70 ans et plus"> 70 ans et plus</label>
+                    </div>
+>>>>>>> Stashed changes
                 </div>
 
                 <!-- Création bouton suivant -->
@@ -266,10 +293,17 @@ Page contenant le code PHP de notre projet
 
                         <table style="line-height: 150%;margin-left:28%;margin-right:25%" cellspacing="30">
 
+<<<<<<< Updated upstream
                             <tr>
                                 <td><input type="radio" name="Corpulence" id="Beaucoup trop maigre" value = "Beaucoup trop maigre" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
                                 <td><label for="Beaucoup trop maigre">Beaucoup trop maigre</label></td>
                             </tr>
+=======
+                    <div>
+                        <input type="radio" name="Corpulence" id="D un poids normal" value = "D un poids normal">
+                        <label for="D un poids normal">D un poids normal</label>
+                    </div>
+>>>>>>> Stashed changes
 
                             <tr>
                                 <td><input type="radio" name="Corpulence" id="Un peu trop maigre" value = "Un peu trop maigre" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
