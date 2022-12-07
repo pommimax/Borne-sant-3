@@ -1,7 +1,7 @@
 /* Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code CSS de notre projet
-version 7/12
+version 2 7/12
 */
 
 
@@ -152,4 +152,24 @@ form div > input, form div > select, form div > textarea {
         visibility: hidden;
     }
 
+datalist {
+    display : inline-flex;
+    color : black;
+    justify-content: space-between;
+    font-size: medium;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#sante {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#TQ1 {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}

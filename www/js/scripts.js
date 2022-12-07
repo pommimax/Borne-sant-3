@@ -1,7 +1,7 @@
 /* Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code Javascript de notre projet
-version 7/12
+version 2 7/12
 */
 
 
@@ -315,10 +315,9 @@ function Animer(idimg, txtBulle)
         }
     }
 }
-//sliders
 
 var santeChoix = "Defaut"
-function ChoixSlider(){
+function ChoixSliderSante(){
 
     var value = event.currentTarget.value;
     console.log(value)
@@ -326,20 +325,19 @@ function ChoixSlider(){
             santeChoix ="Mauvaise"
             Animer('avatarT1','non')
         }
-        else if (value<= 40){
+        else if (21 <= value && value<= 40){
             santeChoix ="Moyenne"
             Animer('avatarT1','non')
         }
-        else if(value <=60){
+        else if(41<=value && value <=60){
             santeChoix = "Bonne"
             Animer('avatarJ1','non')
         }
-        else if(value <=80){
-            santeChoix = "Très bonne"
+        else if(61<= value && value <=80){
+            santeChoix = "Tres bonne"
             Animer('avatarJ1','non')
         }
-        else
-        {
+        else if(81<=value){
             santeChoix="Excellente"
             Animer('avatarJ1','non')
         }

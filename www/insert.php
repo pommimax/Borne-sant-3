@@ -1,14 +1,14 @@
 <?PHP
-
-// version 7/12
+//version 2 7/12
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "tutorial";
 $sante = $_COOKIE["sante"];
 
-$sql = "INSERT INTO `etudiants` (Age, Sexe,Sante,ActivitePhysique,Corpulence,Sommeil,Alcool,Tabac,Cannabis,HeroineCocaine,AutresSubstances,AutresPratiques)
-VALUES( '$_POST[Age]','$_POST[Sexe]','$sante','$_POST[ActivitePhysique]','$_POST[Corpulence]','$_POST[Sommeil]','$_POST[Alcool]','$_POST[Tabac]','$_POST[Cannabis]','$_POST[HeroineCocaine]','$_POST[AutresSubstances]','$_POST[AutresPratiques]')";
+
+$sql = "INSERT INTO `etudiants` (Age, Sexe,Sante,Alimentation,ActivitePhysique,Corpulence,Sommeil,Alcool,Tabac,TQ1,Cannabis,HeroineCocaine,AutresSubstances,AutresPratiques)
+VALUES( '$_POST[Age]','$_POST[Sexe]','$sante','$_POST[Alimentation]','$_POST[ActivitePhysique]','$_POST[Corpulence]','$_POST[Sommeil]','$_POST[Alcool]','$_POST[Tabac]','$_POST[TQ1]','$_POST[Cannabis]','$_POST[HeroineCocaine]','$_POST[AutresSubstances]','$_POST[AutresPratiques]')";
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   // définir le mode exception d'erreur PDO 

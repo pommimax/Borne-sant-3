@@ -1,8 +1,7 @@
 <!--Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - janvier 2023
-Equipe composée de Roxane LAIGNEAU,Julia Body, Marie LOMBART et Maxime POMMIER
+Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code PHP de notre projet
-version 7/12
-julia la belle gosse bitch
+version 2 7/12
 -->
 
 <!DOCTYPE html>
@@ -40,7 +39,7 @@ julia la belle gosse bitch
                 </h1>
 
                 <h2>
-             Evaluez votre état de santé à travers ce questionnaire totalement anonyme, gratuit et sans aucun engagement de votre part   
+             Evaluez votre état de santé à travers ce questionnaire totalement anonyme, gratuit et sans aucun engagement de votre part.   
                 </h2>
 
             <!-- Création bouton suivant -->
@@ -62,17 +61,16 @@ julia la belle gosse bitch
 
                     <label for="Age"> Quel âge avez vous ?</label>
 
-<<<<<<< Updated upstream
-                    <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30">
+                    <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30" name ="Age" id="age" onchange="ChoixAge()">
 
                         <tr>
-                            <td><input type="radio" name="Age" id="De 0 à 20 ans" value = "20"></td>
-                            <td><label for="De 0 à 20 ans"> De 0 à 20 ans </label></td>
+                            <td><input type="radio" name="Age" id="De 0 a 20 ans" value = "20"></td>
+                            <td><label for="De 0 a 20 ans"> De 0 a 20 ans </label></td>
                         </tr>
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 21 a 44 ans" value = "44"></td>
-                            <td><label for="De 21 a 44 ans"> De 21 a 44 ans </label></td>
+                            <td><label for="De 21 a 44 ans">De 21 a 44 ans </label></td>
                         </tr>
 
                         <tr>
@@ -91,32 +89,6 @@ julia la belle gosse bitch
                         </tr>
 
                     </table>
-=======
-                    <div>
-                        <input type="radio" name="Age" id="De 0 à 20 ans" value = "De 0 à 20 ans">
-                        <label for="De 0 à 20 ans"> De 0 à 20 ans </label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="Age" id="De 21 a 44 ans" value = "De 21 a 44 ans">
-                        <label for="De 21 a 44 ans"> De 21 a 44 ans </label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="Age" id="De 45 a 64 ans" value = "De 45 a 64 ans">
-                        <label for="De 45 a 64 ans">De 45 a 64 ans</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="Age" id="De 65 a 69 ans" value = "De 65 a 69 ans">
-                        <label for="De 65 a 69 ans">De 65 a 69 ans</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="Age" id="70 ans et plus" value = "70 ans et plus">
-                        <label for="70 ans et plus"> 70 ans et plus</label>
-                    </div>
->>>>>>> Stashed changes
                 </div>
 
                 <!-- Création bouton suivant -->
@@ -170,21 +142,30 @@ julia la belle gosse bitch
                 <!-- Q3 : Qualification de sa santé -->
 
                 <h1>Qualification santé</h1>
-                <div id="conteneur">
+                    <div id="conteneur">
                     <div id="droite1">
                     </div>
                 <div class = "slidecontainer">
                 <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
-                <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSlider()">
+                <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSliderSante()">
                 <p> Value : <span id="demo"></span></p>
-                </div></div>
+                <datalist id="tickmarks">
+                    <option value="10" label="Mauvaise"></option>
+                    <option value="30" label="Moyenne"></option>
+                    <option value="50" label="Bonne"></option>
+                    <option value="70" label="Tres bonne"></option>
+                    <option value="90" label="Excellente"></option>
+                </datalist>
+                </div>
+                </div>
                     
                 <!-- Création boutons suivant et précédent -->
 
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
 
-            </div>
+           
+        </div>
 
 
             <!-- Création de la page 5-->
@@ -295,17 +276,10 @@ julia la belle gosse bitch
 
                         <table style="line-height: 150%;margin-left:28%;margin-right:25%" cellspacing="30">
 
-<<<<<<< Updated upstream
                             <tr>
                                 <td><input type="radio" name="Corpulence" id="Beaucoup trop maigre" value = "Beaucoup trop maigre" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
                                 <td><label for="Beaucoup trop maigre">Beaucoup trop maigre</label></td>
                             </tr>
-=======
-                    <div>
-                        <input type="radio" name="Corpulence" id="D un poids normal" value = "D un poids normal">
-                        <label for="D un poids normal">D un poids normal</label>
-                    </div>
->>>>>>> Stashed changes
 
                             <tr>
                                 <td><input type="radio" name="Corpulence" id="Un peu trop maigre" value = "Un peu trop maigre" onclick="Animer('avatarT4','<a href=http://www.caloris.fr/calcul-imc.php>Calculer votre IMC</a>')"></td>
@@ -313,8 +287,8 @@ julia la belle gosse bitch
                             </tr>
 
                             <tr>
-                                <td><input type="radio" name="Corpulence" id=" D un poids normal" value = " D un poids normal" onclick="Animer('avatarJ4','non')"></td>
-                                <td><label for=" D un poids normal"> D un poids normal</label></td>
+                                <td><input type="radio" name="Corpulence" id="D un poids normal" value = "D un poids normal" onclick="Animer('avatarJ4','non')"></td>
+                                <td><label for="D un poids normal">D un poids normal</label></td>
                             </tr>
 
                             <tr>
@@ -453,14 +427,25 @@ julia la belle gosse bitch
                     </tr>
 
                     <tr>
-                        <td><input type="radio" name="AQ1" id="1 fois par mois" value = "1 fois par mois"></td>
-                        <td><label for="1 fois par mois">1 fois par mois</label></td>
+                        <td><input type="radio" name="AQ1" id="Une fois par mois ou moins" value = "Une fois par mois ou moins"></td>
+                        <td><label for="Une fois par mois ou moins">Une fois par mois ou moins</label></td>
                     </tr>
 
                     <tr>
-                        <td><input type="radio" name="AQ1" id="2 à 4 fois par mois" value = "2 à 4 fois par mois"></td>
+                        <td><input type="radio" name="AQ1" id="2 a 4 fois par mois" value = "2 a 4 fois par mois"></td>
                         <td><label for="2 à 4 fois par mois">2 à 4 fois par mois</label></td>
                     </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ1" id="2 à 3 fois par semaine" value = "2 à 3 fois par semaine"></td>
+                        <td><label label for="2 à 3 fois par semaine">2 à 3 fois par semaine</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="AQ1" id="4 fois ou plus par semaine" value = "4 fois ou plus par semaine"></td>
+                        <td><label for="4 fois ou plus par semaine">4 fois ou plus par semaine</label></td>
+                    </tr>
+
 
                 </table>
 
@@ -480,7 +465,7 @@ julia la belle gosse bitch
                    <h1>Alcool</h1>
 
             <div>
-                <label for="AQ1"> Combien de verres standard buvez-vous les jours où vous buvez de l'alcool ? :</label>
+                <label for="AQ1"> Combien de verres standards buvez-vous les jours où vous buvez de l'alcool ? :</label>
 
                 <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
 
@@ -653,6 +638,38 @@ julia la belle gosse bitch
             </div>
                 <!-- Création boutons suivants et terminer -->
                 <button class="prevA" type="button">Précédent</button>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+
+            <!-- Q1 question supplémentaire Tabac -->
+
+            <div class="page" id="page15">
+
+                <!-- Q3 : Echelle motivationelle tabac -->
+
+                <h1>Echelle motivationnelle Tabac</h1>
+                <div class = "slidecontainer">
+                <label for="TQ1"> A quel point est-il important pour vous d'arrêter de fumer ?</label>
+                <input type="range" min="0" max="10" step="1" class="slider" name ="TQ1" id="TQ1" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0" label="0 : Ce n'est pas important"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10" label="10 : C'est très important"></option>
+                </datalist>
+                </div>
+                    
+                <!-- Création boutons suivant et précédent -->
+
                 <button class="prev" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
 
