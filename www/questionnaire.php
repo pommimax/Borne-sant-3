@@ -2,7 +2,7 @@
 Equipe composée de Roxane LAIGNEAU,Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code PHP de notre projet
 version 7/12
-julia la belle gosse
+julia la belle gosse bitch
 -->
 
 <!DOCTYPE html>
