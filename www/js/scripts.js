@@ -314,6 +314,7 @@ function Animer(idimg, txtBulle)
         }
     }
 }
+//sliders
 
 var santeChoix = "Defaut"
 function ChoixSlider(){
