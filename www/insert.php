@@ -1,5 +1,5 @@
 <?PHP
-//version 2 7/12
+//version 09/12
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";

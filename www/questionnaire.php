@@ -1,7 +1,8 @@
 <!--Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code PHP de notre projet
-version 2 7/12
+version 09/12
+
 -->
 
 <!DOCTYPE html>
@@ -61,7 +62,7 @@ version 2 7/12
 
                     <label for="Age"> Quel âge avez vous ?</label>
 
-                    <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30" name ="Age" id="age" onchange="ChoixAge()">
+                    <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30">
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 0 a 20 ans" value = "20"></td>
@@ -148,7 +149,6 @@ version 2 7/12
                 <div class = "slidecontainer">
                 <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
                 <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSliderSante()">
-                <p> Value : <span id="demo"></span></p>
                 <datalist id="tickmarks">
                     <option value="10" label="Mauvaise"></option>
                     <option value="30" label="Moyenne"></option>
@@ -165,7 +165,7 @@ version 2 7/12
                 <button class="next" type="button">Suivant</button>
 
            
-        </div>
+            </div>
 
 
             <!-- Création de la page 5-->
