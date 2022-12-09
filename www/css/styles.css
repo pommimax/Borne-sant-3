@@ -125,32 +125,56 @@ form div > input, form div > select, form div > textarea {
     color:blue;
     } 
 
-/* On cache les boutons suivant et précedent pour les pages alcool et cannabis
+/* On cache les boutons suivant et précedent pour les pages alcool, tabac et cannabis
 */
- 
-    #BtnPrec {
-        visibility: hidden;
-    }
 
-    #BtnSuiv{
+    #BtnSuivNA{
         visibility: hidden;
     }
 
     #BtnSuivA{
         visibility: hidden;
     }
-
-    #BtnPrecC{
+ 
+    #BtnPrecA{
         visibility: hidden;
     }
 
-    #BtnSuivC{
+    #BtnPrecNA{
         visibility: hidden;
     }
 
-    #BtnSuivAC{
+    #BtnSuivNT{
         visibility: hidden;
     }
+
+    #BtnSuivT{
+        visibility: hidden;
+    }
+
+    #BtnPrecT{
+        visibility: hidden;
+    }
+
+    #BtnPrecNT{
+        visibility: hidden;
+    }
+
+    #BtnSuivNC{
+        visibility: hidden;
+   }
+
+   #BtnSuivC{
+    visibility: hidden;
+   }
+
+   #BtnPrecC{
+    visibility: hidden;
+   }
+
+   #BtnPrecNC{
+    visibility: hidden;
+   }
 
 datalist {
     display : inline-flex;

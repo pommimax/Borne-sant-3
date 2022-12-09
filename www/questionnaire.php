@@ -149,6 +149,7 @@ version 09/12
                 <div class = "slidecontainer">
                 <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
                 <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSliderSante()">
+                <p> Value : <span id="demo"></span></p>
                 <datalist id="tickmarks">
                     <option value="10" label="Mauvaise"></option>
                     <option value="30" label="Moyenne"></option>
@@ -378,7 +379,7 @@ version 09/12
             <div>
                 <label for="Alcool"> Consommez vous des boissons alcoolisées ? :</label>
 
-                <radio onchange="afficheBtn()" class = "Alcool" name="Alcool" id="AlcID" required>
+                <radio onchange="afficheBtnA()" class = "Alcool" name="Alcool" id="AlcID" required>
 
                     <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
@@ -404,8 +405,8 @@ version 09/12
 
                 <!-- Création boutons suivant et précédent -->
 
-                <button class="prev" id="BtnPrec" type="button">Précédent</button>
-                <button class="next" id= "BtnSuiv" type="button">Suivant</button>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" id="BtnSuivNA" type="button">Suivant</button>
                 <button class="nextA" id="BtnSuivA" type="button">Suivant</button>
 
             </div>
@@ -616,20 +617,22 @@ version 09/12
             <div>
                 <label for="Tabac"> Consommez vous du tabac ?</label>
 
+                <radio onchange="afficheBtnT()" class = "Tabac" name ="Tabac" >
+
                 <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
 
                     <tr>
-                        <td><input type="radio" name="Tabac" id="Oui" value = "Oui"></td>
+                        <td><input type="radio" name="Tabac" id="TbcID1" value = "Oui"></td>
                         <td><label for="Oui">Oui</label></td>
                     </tr>
 
                     <tr>
-                        <td><input type="radio" name="Tabac" id="Non" value = "Non"></td>
+                        <td><input type="radio" name="Tabac" id="TbcID2" value = "Non"></td>
                         <td><label for="Non">Non</label></td>
                     </tr>
 
                     <tr>
-                        <td><input type="radio" name="Tabac" id="Occasionnellement" value = "Occasionnellement"></td>
+                        <td><input type="radio" name="Tabac" id="TbcID3" value = "Occasionnellement"></td>
                         <td><label for="Occasionnellement">Occasionnellement</label></td>
                     </tr>
 
@@ -637,9 +640,10 @@ version 09/12
 
             </div>
                 <!-- Création boutons suivants et terminer -->
-                <button class="prevA" type="button">Précédent</button>
-                <button class="prev" type="button">Précédent</button>
-                <button class="next" type="button">Suivant</button>
+                <button class="prevA" id="BtnPrecA" type="button">Précédent</button>
+                <button class="prev" id="BtnPrecNA" type="button">Précédent</button>
+                <button class="next" id="BtnSuivNT" type="button">Suivant</button>
+                <button class="nextT" id="BtnSuivT" type="button">Suivant</button>
 
             </div>
 
@@ -710,9 +714,10 @@ version 09/12
 
                 <!-- Création boutons suivant et précédent -->
 
-                <button class="prev" id="BtnPrecC" type="button">Précédent</button>
-                <button class="next" id= "BtnSuivC" type="button">Suivant</button>
-                <button class="nextC" id="BtnSuivAC" type="button">Suivant</button>
+                <button class="prevT" id="BtnPrecT" type="button">Précédent</button>
+                <button class="prev"  id="BtnPrecNT" type="button">Précédent</button>
+                <button class="next"  id="BtnSuivNC" type="button">Suivant</button>
+                <button class="nextC" id="BtnSuivC" type="button">Suivant</button>
 
 
             </div>
@@ -950,8 +955,8 @@ version 09/12
             </div>
 
                 <!-- Création boutons suivant et terminer -->
-
-                <button class="prev" type="button">Précédent</button>
+                <button class="prevC" id="BtnPrecC" type="button">Précédent </button>
+                <button class="prev" id="BtnPrecNC" type="button">Précédent</button>
                 <button class="next" type="button">Suivant</button>
 
             </div>
