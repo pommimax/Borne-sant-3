@@ -22,10 +22,8 @@ version 09/12
 <!-- tête du questionnaire test-->
 
 </html>
-<body>
-    <main>
-        <header>
-        </header>
+<body class= "container">
+    <main class="centered-element">
 
        
         <!-- début du questionnaire-->
@@ -1084,8 +1082,13 @@ version 09/12
             </div>
 
         </form>
-        
+
+
+   
+
     </main>
+
+    
 <script src="js/scripts.js"></script>
 </body>
 </html>
