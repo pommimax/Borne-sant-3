@@ -1031,7 +1031,7 @@ version 09/12
             <!-- Création page 24 -->
             <div class="page" id="page24">
                 <h3>Carte de France interactive des régions</h3>
-                <img src="./Image/carteSarthe.png" alt="Les régions de France" usemap="#reg" width="25%">
+                <img src="./Image/carteSarthe.png" alt="Les régions de France" usemap="#reg" width="400">
                 <map name="reg">
                   <area
                       shape="poly"
