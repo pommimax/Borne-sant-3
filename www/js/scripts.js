@@ -461,3 +461,33 @@ function ChoixSliderSante(){
     document.getElementById("demo").innerHTML = value
     document.cookie = "sante="+santeChoix+";"+ new Date().toUTCString() + ";path=/"
 }
+
+const tailleValue = document.getElementById("Taille");
+const afficherTaille = document.getElementById("taille-value");
+const poidsValue = document.getElementById("Poids");
+const afficherPoids = document.getElementById("poids-value");
+const afficherIMC = document.getElementById("imc-value");
+var imc = 0;
+var couleurIMC = document.getElementById("couleur-imc");
+
+function sliderPoidsEtTaille(){
+    afficherTaille.textContent = tailleValue.value;
+    afficherPoids.textContent = poidsValue.value;
+    imc = Math.round(poidsValue.value / (tailleValue.value*tailleValue.value));
+    
+    if (imc<22){
+        couleurIMC = "Votre poids est faible par rapport à votre taille. En cas de perte d’appétit et/ou de poids discutez-en avec votre médecin traitant afin de vérifier l’absence de problème de santé.";
+    } else if (22 <= imc && imc < 25){
+        couleurIMC = "Corpulence normale";
+    } else if (25 <= imc && imc < 30){
+        couleurIMC = "Surpoids";
+    } else if (30<= imc && imc < 35){
+        couleurIMC = "Obesite moderee";
+    } else if (35<= imc && imc < 40){
+        couleurIMC = "Obesite severe";
+    } else if (40 <= imc){
+        couleurIMC = "Obesite morbide";
+    }
+
+    afficherIMC.textContent = imc + " : " + couleurIMC;
+}
