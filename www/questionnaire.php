@@ -64,27 +64,27 @@ version 09/12
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 0 a 20 ans" value = "20"></td>
-                            <td><label for="De 0 a 20 ans"> De 0 a 20 ans </label></td>
+                            <td><label for="De 0 a 20 ans"> De 0 à 20 ans </label></td>
                         </tr>
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 21 a 44 ans" value = "44"></td>
-                            <td><label for="De 21 a 44 ans">De 21 a 44 ans </label></td>
+                            <td><label for="De 21 a 44 ans">De 21 à 44 ans</label></td>
                         </tr>
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 45 a 64 ans" value = "64"></td>
-                            <td><label for="De 45 a 64 ans">De 45 a 64 ans</label></td>
+                            <td><label for="De 45 a 64 ans">De 45 à 64 ans</label></td>
                         </tr>
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 65 a 69 ans" value = "69"></td>
-                            <td><label for="De 65 a 69 ans">De 65 a 69 ans</label></td>
+                            <td><label for="De 65 a 69 ans">De 65 à 69 ans</label></td>
                         </tr>
 
                         <tr>
                             <td><input type="radio" name="Age" id="70 ans et plus" value = "70"></td>
-                            <td><label for="70 ans et plus"> 70 ans et plus</label></td>
+                            <td><label for="70 ans et plus">70 ans et plus</label></td>
                         </tr>
 
                     </table>
@@ -105,17 +105,17 @@ version 09/12
 
                 <div>
 
-                <label for="Sexe">Sexe:</label>
+                <label for="Sexe"></label>
 
                     <table style="line-height: 150%;margin-left:40%;margin-right:50%" cellspacing="30">
                         <tr>
                             <td><input type="radio" name="Sexe" id="Homme" value = "Homme"></td>
-                            <td><label for="Homme"> Homme </label></td>
+                            <td><label for="Homme">Homme</label></td>
                         </tr>
 
                         <tr>
                             <td><input type="radio" name="Sexe" id="Femme" value = "Femme"></td>
-                            <td><label for="Femme"> Femme </label></td>
+                            <td><label for="Femme">Femme</label></td>
                         </tr>
 
                         <tr>
@@ -146,6 +146,7 @@ version 09/12
 
                 <div class = "slidecontainer">
                 <label for="Sante"> Comment qualifiriez vous votre santé ?</label>
+                <div>
                 <input type="range" min="0" max="100" class="slider" name ="Sante" id="sante" onchange="ChoixSliderSante()">
                 <datalist id="tickmarks">
                     <option value="10" label="Mauvaise"></option>
@@ -154,6 +155,8 @@ version 09/12
                     <option value="70" label="Tres bonne"></option>
                     <option value="90" label="Excellente"></option>
                 </datalist>
+                </div>
+                <div id="demo"></div>
                 </div>
                 </div>
                 <div id="droite1" class="droite"></div>
@@ -304,7 +307,59 @@ version 09/12
                 
             </div>
 
-        
+        <!-- Création page calcul ICM -->
+
+            <div class="page" id="pageIMC">
+
+                <!-- IMC -->
+
+                <p>Calcul de votre IMC</p>
+
+                <div>
+                <div id="conteneur">
+                <p> Taille en m : <p>
+                <div id="taille-value"></div>
+                <input type="range" id="Taille" class="slider" name="Taille" min="1.10" max="2.10" step="0.01" oninput="sliderPoidsEtTaille()">
+                <datalist>
+                    <option value="1.10" label="1.10"></option>
+                    <option value="1.35" label="1.35"></option>
+                    <option value="1.60" label="1.60"></option>
+                    <option value="1.85" label="1.85"></option>
+                    <option value="2.10" label="2.10"></option>
+                </datalist>
+                
+                </div>
+
+                <div>
+                <p> Poids en kg : <p>
+                <div id="poids-value"></div>
+                <input type="range" id="Poids" class="slider" name="Poids" min="30" max="150" step="0.5" oninput="sliderPoidsEtTaille()">
+                <datalist>
+                    <option value="30" label="30"></option>
+                    <option value="60" label="60"></option>
+                    <option value="90" label ="90"></option>
+                    <option value="120" label="120"></option>
+                    <option value="150" label="150"></option>
+                </datalist>
+                
+                </div>
+
+                <div id="imc">
+                    <p> Votre IMC </p>
+                    <div id="imc-value"></div>
+                    <div id="couleur-imc"></div>
+                </div>
+            </div>
+            
+            
+
+            <!-- Création boutons suivant et précédent -->
+
+            <button class="prev" type="button">Précédent</button>
+            <button class="next" type="button">Suivant</button>
+
+           
+            </div>
 
             <!-- Création Page 8-->
 

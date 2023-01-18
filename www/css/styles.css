@@ -169,8 +169,8 @@ datalist {
     display : inline-flex;
     color : black;
     justify-content: space-between;
-    font-size: medium;
-    width: 70%;
+    font-size: large;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -188,5 +188,21 @@ datalist {
 }
 
 .page{
+    display: none;
+}
+
+#Poids {
+    width : 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Taille {
+    width : 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#demo {
     display: none;
 }
