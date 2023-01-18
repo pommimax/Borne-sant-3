@@ -371,35 +371,37 @@ version 09/12
 
             <div>
                 <label for="Sommeil"> Comment évaluez-vous votre qualité du Sommeil :</label>
+                <div id="conteneur">
+                    <div id="droite5">
+                    </div>
+                        <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="Sommeil" id="Excellente" value = "Excellente" onclick="Animer('avatarJ5','non')"></td>
+                                <td><label for="Excellente">Excellente</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sommeil" id="Excellente" value = "Excellente"></td>
-                        <td><label for="Excellente">Excellente</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="Sommeil" id="Tres bonne" value = "Tres bonne" onclick="Animer('avatarJ5','non')"></td>
+                                <td><label for="Tres bonne">Tres bonne</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sommeil" id="Tres bonne" value = "Tres bonne"></td>
-                        <td><label for="Tres bonne">Tres bonne</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="Sommeil" id="Bonne" value = "Bonne" onclick="Animer('avatarJ5','non')"></td>
+                                <td><label for="Bonne">Bonne</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sommeil" id="Bonne" value = "Bonne"></td>
-                        <td><label for="Bonne">Bonne</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="Sommeil" id="Moyenne" value = "Moyenne" onclick="Animer('avatarT5','non')"></td>
+                                <td><label for="Moyenne">Moyenne</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sommeil" id="Moyenne" value = "Moyenne"></td>
-                        <td><label for="Moyenne">Moyenne</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="Sommeil" id="Mauvaise" value = "Mauvaise" onclick="Animer('avatarT5','non')"></td>
+                                <td><label for="Mauvaise">Mauvaise</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Sommeil" id="Mauvaise" value = "Mauvaise"></td>
-                        <td><label for="Mauvaise">Mauvaise</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -426,24 +428,27 @@ version 09/12
 
                 <radio onchange="afficheBtn()" class = "Alcool" name="Alcool" id="AlcID" required>
 
-                    <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+                    <div id="conteneur">
+                        <div id="droite6">
+                        </div>
+                            <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                        <tr>
-                            <td><input type="radio" class="Alcool" name="Alcool" id="AlcID1" value = "Oui"></td>
-                            <td><label for="Oui">Oui</label></td>
-                        </tr>
+                                <tr>
+                                    <td><input type="radio" class="Alcool" name="Alcool" id="AlcID1" value = "Oui" onclick="Animer('avatarT6','non')"></td>
+                                    <td><label for="Oui">Oui</label></td>
+                                </tr>
 
-                        <tr>
-                            <td><input type="radio" class="Alcool" name ="Alcool" id="AlcID2" value = "Non"></td>
-                            <td><label for="Non">Non</label></td>
-                        </tr>
+                                <tr>
+                                    <td><input type="radio" class="Alcool" name ="Alcool" id="AlcID2" value = "Non" onclick="Animer('avatarJ6','non')"></td>
+                                    <td><label for="Non">Non</label></td>
+                                </tr>
 
-                        <tr>
-                            <td><input type="radio" class="Alccol"name="Alcool"id="AlcID3" value = "Occasionnellement"></td>
-                            <td><label for="Occasionnellement">Occasionnellement</label></td>
-                        </tr>
+                                <tr>
+                                    <td><input type="radio" class="Alccol"name="Alcool"id="AlcID3" value = "Occasionnellement" onclick="Animer('avatarJ6','non')"></td>
+                                    <td><label for="Occasionnellement">Occasionnellement</label></td>
+                                </tr>
 
-                    </table>
+                            </table></div>
 
             </div>
 
@@ -464,36 +469,38 @@ version 09/12
 
             <div>
                 <label for="AQ1"> A quelle fréquence consommez-vous de l'alcool ? :</label>
+                <div id="conteneur">
+                    <div id="droite7">
+                    </div>
+                        <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AQ1" id="Jamais" value = "Jamais" onclick="Animer('avatarJ7','non')"></td>
+                                <td><label for="Jamais">Jamais</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ1" id="Jamais" value = "Jamais"></td>
-                        <td><label for="Jamais">Jamais</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ1" id="Une fois par mois ou moins" value = "Une fois par mois ou moins" onclick="Animer('avatarJ7','non')"></td>
+                                <td><label for="Une fois par mois ou moins">Une fois par mois ou moins</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ1" id="Une fois par mois ou moins" value = "Une fois par mois ou moins"></td>
-                        <td><label for="Une fois par mois ou moins">Une fois par mois ou moins</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ1" id="2 a 4 fois par mois" value = "2 a 4 fois par mois" onclick="Animer('avatarJ7','non')"></td>
+                                <td><label for="2 à 4 fois par mois">2 à 4 fois par mois</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ1" id="2 a 4 fois par mois" value = "2 a 4 fois par mois"></td>
-                        <td><label for="2 à 4 fois par mois">2 à 4 fois par mois</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ1" id="2 à 3 fois par semaine" value = "2 à 3 fois par semaine" onclick="Animer('avatarT7','non')"></td>
+                                <td><label label for="2 à 3 fois par semaine">2 à 3 fois par semaine</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ1" id="2 à 3 fois par semaine" value = "2 à 3 fois par semaine"></td>
-                        <td><label label for="2 à 3 fois par semaine">2 à 3 fois par semaine</label></td>
-                    </tr>
-
-                    <tr>
-                        <td><input type="radio" name="AQ1" id="4 fois ou plus par semaine" value = "4 fois ou plus par semaine"></td>
-                        <td><label for="4 fois ou plus par semaine">4 fois ou plus par semaine</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ1" id="4 fois ou plus par semaine" value = "4 fois ou plus par semaine" onclick="Animer('avatarT7','non')"></td>
+                                <td><label for="4 fois ou plus par semaine">4 fois ou plus par semaine</label></td>
+                            </tr>
 
 
-                </table>
+                        </table></div>
 
                 </div>
                 <!-- Création boutons précédent et suivant -->
@@ -512,35 +519,37 @@ version 09/12
 
             <div>
                 <label for="AQ1"> Combien de verres standards buvez-vous les jours où vous buvez de l'alcool ? :</label>
+                <div id="conteneur">
+                    <div id="droite8">
+                    </div>
+                        <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:38%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AQ2" id="1 ou 2" value = "1 ou 2" onclick="Animer('avatarJ8','non')"></td>
+                                <td><label for="1 ou 2">1 ou 2</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ2" id="1 ou 2" value = "1 ou 2"></td>
-                        <td><label for="1 ou 2">1 ou 2</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ2" id="3 ou 4" value = "3 ou 4" onclick="Animer('avatarJ8','non')"></td>
+                                <td><label for="3 ou 4">3 ou 4</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ2" id="3 ou 4" value = "3 ou 4"></td>
-                        <td><label for="3 ou 4">3 ou 4</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ2" id="5 ou 6" value = "5 ou 6" onclick="Animer('avatarT8','non')"></td>
+                                <td><label for="5 ou 6">5 ou 6</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ2" id="5 ou 6" value = "5 ou 6"></td>
-                        <td><label for="5 ou 6">5 ou 6</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ2" id="7 à 9" value = "7 à 9" onclick="Animer('avatarT8','non')"></td>
+                                <td><label for="7 à 9">7 à 9</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ2" id="7 à 9" value = "7 à 9"></td>
-                        <td><label for="7 à 9">7 à 9</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ2" id="10 et plus" value = "10 et plus" onclick="Animer('avatarT8','non')"></td>
+                                <td><label for="10 et plus">10 et plus</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ2" id="10 et plus" value = "10 et plus"></td>
-                        <td><label for="10 et plus">10 et plus</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
                 </div>
                 <!-- Création boutons précédent et suivant -->
@@ -558,20 +567,22 @@ version 09/12
 
             <div>
                 <label for="AQ3"> Est ce que votre entourage vous a fait des remarques concernant votre consommation d'alcool ? :</label>
+                <div id="conteneur">
+                    <div id="droite9">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AQ3" id="Oui" value = "Oui" onclick="Animer('avatarJ9','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ3" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ3" id="Non" value = "Non" onclick="Animer('avatarT9','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ3" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
     
 
                 </div>
@@ -590,20 +601,22 @@ version 09/12
 
             <div>
                 <label for="AQ4">Vous est-il arrivé de consommer de l'alcool le matin pour vous sentir en forme ? :</label>
+                <div id="conteneur">
+                    <div id="droite10">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AQ4" id="Oui" value = "Oui" onclick="Animer('avatarT10','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ4" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ4" id="Non" value = "Non" onclick="Animer('avatarJ10','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ4" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
     
@@ -624,20 +637,22 @@ version 09/12
             <div>
 
                 <label for="AQ4">Vous est-il arrivé de boire et de ne plus vous souvenir le matin de ce que vous avez pu dire ou faire ? :</label>
+                <div id="conteneur">
+                    <div id="droite11">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AQ5" id="Oui" value = "Oui" onclick="Animer('avatarT11','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ5" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AQ5" id="Non" value = "Non" onclick="Animer('avatarJ11','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AQ5" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -661,25 +676,27 @@ version 09/12
 
             <div>
                 <label for="Tabac"> Consommez vous du tabac ?</label>
+                <div id="conteneur">
+                    <div id="droite12">
+                    </div>
+                        <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="Tabac" id="Oui" value = "Oui" onclick="Animer('avatarT12','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Tabac" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="Tabac" id="Non" value = "Non" onclick="Animer('avatarJ12','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Tabac" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="Tabac" id="Occasionnellement" value = "Occasionnellement" onclick="Animer('avatarJ12','non')"></td>
+                                <td><label for="Occasionnellement">Occasionnellement</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="Tabac" id="Occasionnellement" value = "Occasionnellement"></td>
-                        <td><label for="Occasionnellement">Occasionnellement</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
                 <!-- Création boutons suivants et terminer -->
@@ -698,20 +715,23 @@ version 09/12
                 <h1>Echelle motivationnelle Tabac</h1>
                 <div class = "slidecontainer">
                 <label for="TQ1"> A quel point est-il important pour vous d'arrêter de fumer ?</label>
-                <input type="range" min="0" max="10" step="1" class="slider" name ="TQ1" id="TQ1" list="tickmarks">
-                <datalist id="tickmarks">
-                    <option value="0" label="0 : Ce n'est pas important"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    <option value="6"></option>
-                    <option value="7"></option>
-                    <option value="8"></option>
-                    <option value="9"></option>
-                    <option value="10" label="10 : C'est très important"></option>
-                </datalist>
+                    <div id="conteneur">
+                        <div id="droite13">
+                        </div>
+                            <input type="range" min="0" max="10" step="1" class="slider" name ="TQ1" id="TQ1" list="tickmarks">
+                            <datalist id="tickmarks">
+                                <option value="0" label="0 : Ce n'est pas important" onclick="Animer('avatarT13','non')"></option>
+                                <option value="1" onclick="Animer('avatarT13','non')"></option>
+                                <option value="2" onclick="Animer('avatarT13','non')"></option>
+                                <option value="3" onclick="Animer('avatarT13','non')"></option>
+                                <option value="4" onclick="Animer('avatarT13','non')"></option>
+                                <option value="5" onclick="Animer('avatarJ13','non')"></option>
+                                <option value="6" onclick="Animer('avatarJ13','non')"></option>
+                                <option value="7" onclick="Animer('avatarJ13','non')"></option>
+                                <option value="8" onclick="Animer('avatarJ13','non')"></option>
+                                <option value="9" onclick="Animer('avatarJ13','non')"></option>
+                                <option value="10" label="10 : C'est très important" onclick="Animer('avatarJ13','non')"></option>
+                            </datalist></div>
                 </div>
                     
                 <!-- Création boutons suivant et précédent -->
@@ -733,25 +753,27 @@ version 09/12
             <div>
                 <label for="Cannabis"> Consommez vous du cannabis ? :</label>
                 <radio onchange="afficheBtnC()" class = "Alcool" name="Alcool" id="AlcID" required>
+                    <div id="conteneur">
+                        <div id="droite14">
+                        </div>
+                            <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
 
-                    <table style="line-height: 150%;margin-left:33%;margin-right:25%" cellspacing="30">
+                                <tr>
+                                    <td><input type="radio" name="Cannabis" id="CanID1" value = "Oui" onclick="Animer('avatarT14','non')"></td>
+                                    <td><label for="Oui">Oui</label></td>
+                                </tr>
 
-                        <tr>
-                            <td><input type="radio" name="Cannabis" id="CanID1" value = "Oui"></td>
-                            <td><label for="Oui">Oui</label></td>
-                        </tr>
+                                <tr>
+                                    <td><input type="radio" name="Cannabis" id="CanID2" value = "Non" onclick="Animer('avatarJ14','non')"></td>
+                                    <td><label for="Non">Non</label></td>
+                                </tr>
 
-                        <tr>
-                            <td><input type="radio" name="Cannabis" id="CanID2" value = "Non"></td>
-                            <td><label for="Non">Non</label></td>
-                        </tr>
+                                <tr>
+                                    <td><input type="radio" name="Cannabis" id="CanID3" value = "Occasionnellement" onclick="Animer('avatarJ14','non')"></td>
+                                    <td><label for="Occasionnellement">Occasionnellement</label></td>
+                                </tr>
 
-                        <tr>
-                            <td><input type="radio" name="Cannabis" id="CanID3" value = "Occasionnellement"></td>
-                            <td><label for="Occasionnellement">Occasionnellement</label></td>
-                        </tr>
-
-                    </table>
+                            </table></div>
             </div>
 
                 <!-- Création boutons suivant et précédent -->
@@ -772,20 +794,22 @@ version 09/12
             <div>
 
                 <label for="CQ1">Avez-vous déjà fumé du cannabis avant midi ?</label>
+                <div id="conteneur">
+                    <div id="droite15">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="CQ1" id="Oui" value = "Oui" onclick="Animer('avatarT15','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ1" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="CQ1" id="Non" value = "Non" onclick="Animer('avatarJ15','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ1" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -805,20 +829,22 @@ version 09/12
             <div>
 
                 <label for="CQ2">Avez-vous déjà fumé du cannabis lorque vous étiez seul(e) ?</label>
+                <div id="conteneur">
+                    <div id="droite16">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="CQ2" id="Oui" value = "Oui" onclick="Animer('avatarT16','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ2" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="CQ2" id="Non" value = "Non" onclick="Animer('avatarJ16','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ2" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -838,20 +864,22 @@ version 09/12
             <div>
 
                 <label for="CQ3">Avez-vous déjà eu des problèmes de mémoire quand vous fumez du cannabis ?</label>
+                <div id="conteneur">
+                    <div id="droite17">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="CQ3" id="Oui" value = "Oui" onclick="Animer('avatarT17','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ3" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="CQ3" id="Non" value = "Non" onclick="Animer('avatarJ17','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ3" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -872,20 +900,22 @@ version 09/12
             <div>
 
                 <label for="CQ4">Des amis ou des membres de votre famille vous ont-ils déjà dit que vous devriez réduire votre consommation de cannabis?</label>
+                <div id="conteneur">
+                    <div id="droite18">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="CQ4" id="Oui" value = "Oui" onclick="Animer('avatarJ18','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ4" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="CQ4" id="Non" value = "Non" onclick="Animer('avatarT18','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ4" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -905,20 +935,22 @@ version 09/12
             <div>
 
                 <label for="CQ5">Avez-vous déjà essayé de réduire ou d'arrêter votre consommation de cannabis sans y parvenir ?</label>
+                <div id="conteneur">
+                    <div id="droite19">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="CQ5" id="Oui" value = "Oui" onclick="Animer('avatarJ19','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ5" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="CQ5" id="Non" value = "Non" onclick="Animer('avatarT19','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ5" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -938,20 +970,22 @@ version 09/12
             <div>
 
                 <label for="CQ6">Avez-vous déjà eu des problèmes à cause de votre consommation de cannabis (dispute, bagarre, accident, mauvais résultat à l'école, etc.)?</label>
+                <div id="conteneur">
+                    <div id="droite20">
+                    </div>
+                        <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:42%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="CQ6" id="Oui" value = "Oui" onclick="Animer('avatarT20','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ6" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="CQ6" id="Non" value = "Non" onclick="Animer('avatarJ20','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="CQ6" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -973,25 +1007,27 @@ version 09/12
 
             <div>
                 <label for="HeroineCocaine"> Consommez vous de l'héroine ou de la cocaine? :</label>
+                <div id="conteneur">
+                    <div id="droite21">
+                    </div>
+                        <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="HeroineCocaine" id="Oui" value = "Oui" onclick="Animer('avatarT21','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="HeroineCocaine" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="HeroineCocaine" id="Non" value = "Non" onclick="Animer('avatarJ21','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="HeroineCocaine" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="HeroineCocaine" id="Occasionnellement" value = "Occasionnellement" onclick="Animer('avatarJ21','non')"></td>
+                                <td><label for="Occasionnellement">Occasionnellement</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="HeroineCocaine" id="Occasionnellement" value = "Occasionnellement"></td>
-                        <td><label for="Occasionnellement">Occasionnellement</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -1013,25 +1049,27 @@ version 09/12
 
             <div>
                 <label for="AutresSubstances"> Consommez vous d'autres substances telles que le gaz hilarant, du LSD, de l'extasie ou des médicaments?</label>
+                <div id="conteneur">
+                    <div id="droite22">
+                    </div>
+                        <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AutresSubstances" id="Oui" value = "Oui" onclick="Animer('avatarT22','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AutresSubstances" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AutresSubstances" id="Non" value = "Non" onclick="Animer('avatarJ22','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AutresSubstances" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AutresSubstances" id="Occasionnellement" value = "Occasionnellement" onclick="Animer('avatarJ22','non')"></td>
+                                <td><label for="Occasionnellement">Occasionnellement</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AutresSubstances" id="Occasionnellement" value = "Occasionnellement"></td>
-                        <td><label for="Occasionnellement">Occasionnellement</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 
@@ -1053,25 +1091,27 @@ version 09/12
 
             <div>
                 <label for="AutresPratiques"> Les pratiques suivantes : Jeux d'argent, jeux vidéo, sexe, sport, écrans, ont elles un impact sur votre vie personelle où professionelle (financier, isolement, perte de travail, perte de réseau social...) :</label>
+                <div id="conteneur">
+                    <div id="droite23">
+                    </div>
+                        <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
 
-                <table style="line-height: 150%;margin-left:35%;margin-right:25%" cellspacing="30">
+                            <tr>
+                                <td><input type="radio" name="AutresPratiques" id="Oui" value = "Oui" onclick="Animer('avatarT23','non')"></td>
+                                <td><label for="Oui">Oui</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AutresPratiques" id="Oui" value = "Oui"></td>
-                        <td><label for="Oui">Oui</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AutresPratiques" id="Non" value = "Non" onclick="Animer('avatarJ23','non')"></td>
+                                <td><label for="Non">Non</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AutresPratiques" id="Non" value = "Non"></td>
-                        <td><label for="Non">Non</label></td>
-                    </tr>
+                            <tr>
+                                <td><input type="radio" name="AutresPratiques" id="Occasionnellement" value = "Occasionnellement" onclick="Animer('avatarJ23','non')"></td>
+                                <td><label for="Occasionnellement">Occasionnellement</label></td>
+                            </tr>
 
-                    <tr>
-                        <td><input type="radio" name="AutresPratiques" id="Occasionnellement" value = "Occasionnellement"></td>
-                        <td><label for="Occasionnellement">Occasionnellement</label></td>
-                    </tr>
-
-                </table>
+                        </table></div>
 
             </div>
 

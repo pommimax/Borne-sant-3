@@ -280,7 +280,7 @@ var i = -2;
 function Animer(idimg, txtBulle)
 {
     var div = document.getElementById('droite' + i);
-    div.innerHTML = '<div id="avatarJ'+i+'" style="position:relative; height:150px; top:100px; width:100px; visibility:hidden; float:right; margin-right: 250px"><img src="./Image/'+ age +'J.png" width="150px" height="auto"></div><div id="avatarT'+i+'" style="position: relative;height:100px;top:100px; width:100px; visibility:hidden; float:right; margin-right: -100px"><img src="./Image/'+age+'T.png" width="150px" height="auto"></div><div id="bulle'+i+'" style="position: relative;height:150px;width:27%;visibility:hidden;float:right;clear:right; top:-150px"><img src="./Image/bulle.png" width="200px" height="auto"><span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:120px">'+ txtBulle +'</span></div>';
+    div.innerHTML = '<div id="avatarJ'+i+'" style="position:relative; height:150px; top:60px; width:5px; visibility:hidden; float:right; margin-right: 250px"><img src="./Image/'+ age +'J.png" width="150px" height="auto"></div><div id="avatarT'+i+'" style="position: relative;height:100px;top:100px; width:100px; visibility:hidden; float:right; margin-right: -100px"><img src="./Image/'+age+'T.png" width="150px" height="auto"></div><div id="bulle'+i+'" style="position: relative;height:150px;width:11%;visibility:hidden;float:right;clear:right; top:-150px"><img src="./Image/bulle.png" width="200px" height="auto"><span style="position:absolute;bottom: 50%;color: #00FF00; font-size:15px; right:5px">'+ txtBulle +'</span></div>';
 
 
     var element2 = document.getElementById(idimg);
