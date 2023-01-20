@@ -117,53 +117,53 @@ button:hover span:after {
 /* On cache les boutons suivant et précedent pour les pages alcool, tabac et cannabis
 */
 
-    #BtnSuivNA{
-        visibility: hidden;
-    }
-
-    #BtnSuivA{
-        visibility: hidden;
-    }
- 
-    #BtnPrecA{
-        visibility: hidden;
-    }
-
-    #BtnPrecNA{
-        visibility: hidden;
-    }
-
-    #BtnSuivNT{
-        visibility: hidden;
-    }
-
-    #BtnSuivT{
-        visibility: hidden;
-    }
-
-    #BtnPrecT{
-        visibility: hidden;
-    }
-
-    #BtnPrecNT{
-        visibility: hidden;
-    }
-
-    #BtnSuivNC{
-        visibility: hidden;
-   }
-
-   #BtnSuivC{
+#BtnSuivNA{
     visibility: hidden;
-   }
+}
 
-   #BtnPrecC{
+#BtnSuivA{
     visibility: hidden;
-   }
+}
 
-   #BtnPrecNC{
+#BtnPrecA{
     visibility: hidden;
-   }
+}
+
+#BtnPrecNA{
+    visibility: hidden;
+}
+
+#BtnSuivNT{
+    visibility: hidden;
+}
+
+#BtnSuivT{
+    visibility: hidden;
+}
+
+#BtnPrecT{
+    visibility: hidden;
+}
+
+#BtnPrecNT{
+    visibility: hidden;
+}
+
+#BtnSuivNC{
+    visibility: hidden;
+}
+
+#BtnSuivC{
+    visibility: hidden;
+}
+
+#BtnPrecC{
+    visibility: hidden;
+}
+
+#BtnPrecNC{
+    visibility: hidden;
+}
 
 datalist {
     display : inline-flex;

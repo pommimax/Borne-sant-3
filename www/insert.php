@@ -1,27 +1,10 @@
 <?PHP
-//version 2 7/12
+//version 09/12
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "tutorial";
 $sante = $_COOKIE["sante"];
-
-if ($_POST["Age"] == 20){
-	$_POST["Age"]="De 0 a 20 ans";
-}
-else if ($_POST["Age"] == 44){
-	$_POST["Age"]="De 21 a 44 ans";
-}
-else if ($_POST["Age"] == 64){
-	$_POST["Age"]="De 45 a 64 ans";
-}
-else if ($_POST["Age"] == 69){
-	$_POST["Age"]="De 65 a 69 ans";
-}
-else if ($_POST["Age"] == 70){
-	$_POST["Age"]="70 ans et plus";
-}
-
 
 
 $sql = "INSERT INTO `etudiants` (Age, Sexe,Sante,Alimentation,ActivitePhysique,Corpulence,Sommeil,Alcool,Tabac,TQ1,Cannabis,HeroineCocaine,AutresSubstances,AutresPratiques)

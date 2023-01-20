@@ -1,7 +1,7 @@
 /* Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - Janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code Javascript de notre projet
-version 20/01
+version 09/12
 */
 
 
@@ -26,21 +26,19 @@ window.onload = () => {
         bouton.addEventListener("click", pageSuivante)
     }
 
-     // On gère les boutons suivant pour pas d'alcool
-
-    boutons = document.querySelectorAll(".nextA")
-
-    for (let bouton of boutons){
-        bouton.addEventListener("click",pageSuivanteAlcoolNon)
-    }
-
- 
-
     // On gère les boutons "précédent"
     boutons = document.querySelectorAll(".prev")
 
     for(let bouton of boutons){
         bouton.addEventListener("click", pagePrecedente)
+    }
+
+    // On gère les boutons suivant pour pas d'alcool
+
+    boutons = document.querySelectorAll(".nextA")
+
+    for (let bouton of boutons){
+        bouton.addEventListener("click",pageSuivanteAlcoolNon)
     }
 
     // On gère les boutons précédent pour pas d'alcool
@@ -65,7 +63,24 @@ window.onload = () => {
     boutons = document.querySelectorAll(".prevC")
 
     for (let bouton of boutons){
-        bouton.addEventListener("click", pagePrecedanteCannabisNon)
+        bouton.addEventListener("click", pagePrecedenteCannabisNon)
+    }
+
+    // On gère les boutons suivants pour pas de tabac
+
+    boutons = document.querySelectorAll(".nextT")
+
+    for (let bouton of boutons){
+        bouton.addEventListener("click", pageSuivanteTabacNon)
+
+    }
+
+    // On gère les boutons précédent pour le tabac
+
+    boutons = document.querySelectorAll(".prevT")
+
+    for (let bouton of boutons){
+        bouton.addEventListener("click",pagePrecedenteTabacNon)
     }
 
 }
@@ -148,7 +163,7 @@ function pagePrecedanteAlcoolNon(){
  * Cette fonction permet de ne pas revenir sur les questions sur le cannabis
  */ 
 
- function pagePrecedenteCannabis(){
+ function pagePrecedenteCannabisNon(){
 
     for(let page of pages){
         page.style.display = "none"
@@ -159,19 +174,48 @@ function pagePrecedanteAlcoolNon(){
     this.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.style.display = 'initial'
 }
 
+/**
+ * Cette fonction permet de ne pas afficher la question sur le tabac
+ **/
+
+ function pageSuivanteTabacNon(){
+    for(let page of pages){
+        page.style.display = "none"
+    }
+
+    // On affiche la page après les questions sur le tabac
+
+    this.parentElement.nextElementSibling.nextElementSibling.style.display = 'initial'
+ }
+
+ /**
+  * Cette fonction permet de ne pas revenir sur les questions du tabac
+  **/ 
+
+  function pagePrecedenteTabacNon(){
+    for(let page of pages){
+        page.style.display = "none"
+    }
+
+    // On affiche la page avant la question sur le tabac
+
+    this.parentElement.previousElementSibling.previousElementSibling.style.display ='initial'
+  }
+
 /*
 *Fonction pour afficher le bon bouton pour la question sur alcool 
 */
 
-const Btn1 = document.getElementById('BtnPrec')
-const Btn2 = document.getElementById('BtnSuiv')
-const Btn3 = document.getElementById('BtnSuivA')
+const Btn1 = document.getElementById('BtnSuivNA')
+const Btn2 = document.getElementById('BtnSuivA')
+const Btn3 = document.getElementById('BtnPrecA')
+const Btn4 = document.getElementById('BtnPrecNA')
 
 var valeur1;
 var valeur2;
 var valeur3;
 
-function afficheBtn(){
+function afficheBtnA(){
 
     if (document.getElementById('AlcID1').checked) {
 
@@ -181,8 +225,9 @@ function afficheBtn(){
         if (valeur1 === "Oui"){
 
             Btn1.style.visibility = 'visible'
-            Btn2.style.visibility = 'visible'
+            Btn2.style.visibility = 'hidden'
             Btn3.style.visibility = 'hidden'
+            Btn4.style.visibility = 'visible'
             valeur1 = "Non";
         }
 
@@ -194,8 +239,9 @@ function afficheBtn(){
         if (valeur3 === "Occasionnellement"){
 
             Btn1.style.visibility = 'visible'
-            Btn2.style.visibility = 'visible'
+            Btn2.style.visibility = 'hidden'
             Btn3.style.visibility = 'hidden'
+            Btn4.style.visibility = 'visible'
             valeur1 = "Non";
         }
 
@@ -204,9 +250,10 @@ function afficheBtn(){
         valeur2 = document.getElementById('AlcID2').value;}
 
         if (valeur2 ==="Non"){
-            Btn1.style.visibility = 'visible'
-            Btn2.style.visibility = 'hidden'
+            Btn1.style.visibility = 'hidden'
+            Btn2.style.visibility = 'visible'
             Btn3.style.visibility = 'visible'
+            Btn4.style.visibility = 'hidden'
             valeur2 = "Oui"
         }
 
@@ -216,9 +263,10 @@ function afficheBtn(){
  * Fonction pour afficher le bon bouton pour la question sur le cannabis
  **/ 
 
-const Btn10 = document.getElementById('BtnPrecC')
+const Btn10 = document.getElementById('BtnSuivNC')
 const Btn20 = document.getElementById('BtnSuivC')
-const Btn30 = document.getElementById('BtnSuivAC')
+const Btn30 = document.getElementById('BtnPrecC')
+const Btn40 = document.getElementById('BtnPrecNC')
 
 var valeur10;
 var valeur20;
@@ -234,8 +282,9 @@ function afficheBtnC(){
         if (valeur10 === "Oui"){
 
             Btn10.style.visibility = 'visible'
-            Btn20.style.visibility = 'visible'
+            Btn20.style.visibility = 'hidden'
             Btn30.style.visibility = 'hidden'
+            Btn40.style.visibility = 'visible'
             valeur10 = "Non";
         }
 
@@ -247,8 +296,9 @@ function afficheBtnC(){
         if (valeur30 === "Occasionnellement"){
 
             Btn10.style.visibility = 'visible'
-            Btn20.style.visibility = 'visible'
+            Btn20.style.visibility = 'hidden'
             Btn30.style.visibility = 'hidden'
+            Btn40.style.visibility = 'visible'
             valeur30 = "Non";
         }
 
@@ -257,13 +307,79 @@ function afficheBtnC(){
         valeur20 = document.getElementById('CanID2').value;}
 
         if (valeur20 ==="Non"){
-            Btn10.style.visibility = 'visible'
-            Btn20.style.visibility = 'hidden'
+            Btn10.style.visibility = 'hidden'
+            Btn20.style.visibility = 'visible'
             Btn30.style.visibility = 'visible'
+            Btn40.style.visibility = 'hidden'
             valeur20 = "Oui"
         }
 
 }
+
+/**
+ * Fonction pour afficher les bons boutons pour la question sur le tabac
+ **/ 
+
+
+var valeur100;
+var valeur200;
+var valeur300;
+
+const Btn100 = document.getElementById('BtnSuivNT')
+const Btn200 = document.getElementById('BtnSuivT')
+const Btn300 = document.getElementById('BtnPrecT')
+const Btn400 = document.getElementById('BtnPrecNT')
+
+function afficheBtnT(){
+
+    
+
+
+    if (document.getElementById('TbcID1').checked) {
+
+        valeur100 = document.getElementById('TbcID1').value;}
+
+
+        if (valeur100 === "Oui"){
+
+            Btn100.style.visibility = 'visible'
+            Btn200.style.visibility = 'hidden'
+            Btn300.style.visibility = 'hidden'
+            Btn400.style.visibility = 'visible'
+            valeur100 = "Non";
+        }
+
+    if (document.getElementById('TbcID3').checked) {
+
+        valeur300 = document.getElementById('TbcID3').value;}
+
+
+        if (valeur300 === "Occasionnellement"){
+
+            Btn100.style.visibility = 'visible'
+            Btn200.style.visibility = 'hidden'
+            Btn300.style.visibility = 'hidden'
+            Btn400.style.visibility = 'visible'
+            valeur300 = "Non";
+        }
+
+
+    if (document.getElementById('TbcID2').checked){
+        valeur200 = document.getElementById('TbcID2').value;}
+
+        if (valeur200 ==="Non"){
+            Btn100.style.visibility = 'hidden'
+            Btn200.style.visibility = 'visible'
+            Btn300.style.visibility = 'visible'
+            Btn400.style.visibility = 'hidden'
+            valeur200 = "Oui"
+        }
+
+}
+
+
+
+
 
 /**
  * Fonction qui gère l'animation des avatars 
@@ -344,34 +460,4 @@ function ChoixSliderSante(){
 
     document.getElementById("demo").innerHTML = value
     document.cookie = "sante="+santeChoix+";"+ new Date().toUTCString() + ";path=/"
-}
-
-const tailleValue = document.getElementById("Taille");
-const afficherTaille = document.getElementById("taille-value");
-const poidsValue = document.getElementById("Poids");
-const afficherPoids = document.getElementById("poids-value");
-const afficherIMC = document.getElementById("imc-value");
-var imc = 0;
-var couleurIMC = document.getElementById("couleur-imc");
-
-function sliderPoidsEtTaille(){
-    afficherTaille.textContent = tailleValue.value;
-    afficherPoids.textContent = poidsValue.value;
-    imc = Math.round(poidsValue.value / (tailleValue.value*tailleValue.value));
-    
-    if (imc<22){
-        couleurIMC = "Votre poids est faible par rapport à votre taille. En cas de perte d’appétit et/ou de poids discutez-en avec votre médecin traitant afin de vérifier l’absence de problème de santé.";
-    } else if (22 <= imc && imc < 25){
-        couleurIMC = "Corpulence normale";
-    } else if (25 <= imc && imc < 30){
-        couleurIMC = "Surpoids";
-    } else if (30<= imc && imc < 35){
-        couleurIMC = "Obesite moderee";
-    } else if (35<= imc && imc < 40){
-        couleurIMC = "Obesite severe";
-    } else if (40 <= imc){
-        couleurIMC = "Obesite morbide";
-    }
-
-    afficherIMC.textContent = imc + " : " + couleurIMC;
 }
