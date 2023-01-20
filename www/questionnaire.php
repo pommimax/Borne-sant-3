@@ -1,7 +1,7 @@
 <!--Projet Borne connectée en santée, ESEO-CHM, septembre 2022 - janvier 2023
 Equipe composée de Roxane LAIGNEAU, Julia Body, Marie LOMBART et Maxime POMMIER
 Page contenant le code PHP de notre projet
-version 09/12
+version 20/01
 
 -->
 
@@ -60,7 +60,7 @@ version 09/12
 
                     <label for="Age"> Quel âge avez vous ?</label>
 
-                    <table style="line-height: 150%;margin-left:35%;margin-right:15%" cellspacing="30">
+                    <table style="line-height: 150%;margin-left:40%;margin-right:20%" cellspacing="30">
 
                         <tr>
                             <td><input type="radio" name="Age" id="De 0 a 20 ans" value = "20"></td>
@@ -107,7 +107,7 @@ version 09/12
 
                 <label for="Sexe"></label>
 
-                    <table style="line-height: 150%;margin-left:40%;margin-right:50%" cellspacing="30">
+                    <table style="line-height: 150%;margin-left:42%;margin-right:20%" cellspacing="30">
                         <tr>
                             <td><input type="radio" name="Sexe" id="Homme" value = "Homme"></td>
                             <td><label for="Homme">Homme</label></td>
@@ -197,7 +197,7 @@ version 09/12
 
                         <tr>
                             <td><input type="radio" name="Alimentation" id="Pas du tout" value = "Pas du tout" onclick="Animer('avatarT2','<a href=https://www.mangerbouger.fr>Visiter le site <br> mangez bougez</a>')"></td>
-                            <td><label for="Bonne">Bonne</label></td>
+                            <td><label for="Pas du tout">Pas du tout</label></td>
                         </tr>
 
                     </table></div>
